@@ -55,7 +55,7 @@ Node:
 The currently built tags are:
 
 {% for build in builds -%}
- - __`{{ build['tag'] }}`__: {{ build['alias_tags'] | monospaced_list }}
+ - __`{{ build['tag'] }}`__: [![](https://images.microbadger.com/badges/image/{{ config['image_name'] }}:{{ build['tag'] }}.svg)](https://microbadger.com/images/{{ config['image_name'] }}:{{ build['tag'] }}) aliases: {{ build['alias_tags'] | monospaced_list }}
 {% endfor -%}
 
 See the complete list at https://hub.docker.com/r/{{ config['image_name'] }}/tags/.

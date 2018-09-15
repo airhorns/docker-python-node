@@ -53,42 +53,42 @@ Node:
 
 The currently built tags are:
 
-- __`3.7.0-10.10.0-stretch`__: `latest-latest-stretch`, `latest-latest`, `latest-10-stretch`, `latest-10`, `3-latest-stretch`, `3-latest`, `3-10-stretch`, `3-10`, `3.7-latest-stretch`, `3.7-latest`, `3.7-10-stretch`, `3.7-10`
-- __`3.7.0-8.12.0-stretch`__: `latest-8-stretch`, `latest-8`, `3-8-stretch`, `3-8`, `3.7-8-stretch`, `3.7-8`
-- __`3.7.0-6.14.4-stretch`__: `latest-6-stretch`, `latest-6`, `3-6-stretch`, `3-6`, `3.7-6-stretch`, `3.7-6`
-- __`3.6.6-10.10.0-stretch`__: `3.6-latest-stretch`, `3.6-latest`, `3.6-10-stretch`, `3.6-10`
-- __`3.6.6-8.12.0-stretch`__: `3.6-8-stretch`, `3.6-8`
-- __`3.6.6-6.14.4-stretch`__: `3.6-6-stretch`, `3.6-6`
-- __`3.5.6-10.10.0-stretch`__: `3.5-latest-stretch`, `3.5-latest`, `3.5-10-stretch`, `3.5-10`
-- __`3.5.6-8.12.0-stretch`__: `3.5-8-stretch`, `3.5-8`
-- __`3.5.6-6.14.4-stretch`__: `3.5-6-stretch`, `3.5-6`
-- __`2.7.15-10.10.0-stretch`__: `2-latest-stretch`, `2-latest`, `2-10-stretch`, `2-10`, `2.7-latest-stretch`, `2.7-latest`, `2.7-10-stretch`, `2.7-10`
-- __`2.7.15-8.12.0-stretch`__: `2-8-stretch`, `2-8`, `2.7-8-stretch`, `2.7-8`
-- __`2.7.15-6.14.4-stretch`__: `2-6-stretch`, `2-6`, `2.7-6-stretch`, `2.7-6`
-- __`3.7.0-10.10.0-slim-stretch`__: `latest-latest-slim-stretch`, `latest-10-slim-stretch`, `3-latest-slim-stretch`, `3-10-slim-stretch`, `3.7-latest-slim-stretch`, `3.7-10-slim-stretch`
-- __`3.7.0-8.12.0-slim-stretch`__: `latest-8-slim-stretch`, `3-8-slim-stretch`, `3.7-8-slim-stretch`
-- __`3.7.0-6.14.4-slim-stretch`__: `latest-6-slim-stretch`, `3-6-slim-stretch`, `3.7-6-slim-stretch`
-- __`3.6.6-10.10.0-slim-stretch`__: `3.6-latest-slim-stretch`, `3.6-10-slim-stretch`
-- __`3.6.6-8.12.0-slim-stretch`__: `3.6-8-slim-stretch`
-- __`3.6.6-6.14.4-slim-stretch`__: `3.6-6-slim-stretch`
-- __`3.5.6-10.10.0-slim-stretch`__: `3.5-latest-slim-stretch`, `3.5-10-slim-stretch`
-- __`3.5.6-8.12.0-slim-stretch`__: `3.5-8-slim-stretch`
-- __`3.5.6-6.14.4-slim-stretch`__: `3.5-6-slim-stretch`
-- __`2.7.15-10.10.0-slim-stretch`__: `2-latest-slim-stretch`, `2-10-slim-stretch`, `2.7-latest-slim-stretch`, `2.7-10-slim-stretch`
-- __`2.7.15-8.12.0-slim-stretch`__: `2-8-slim-stretch`, `2.7-8-slim-stretch`
-- __`2.7.15-6.14.4-slim-stretch`__: `2-6-slim-stretch`, `2.7-6-slim-stretch`
-- __`3.7.0-10.10.0-alpine3.8`__: `latest-latest-alpine`, `latest-latest-alpine3.8`, `latest-10-alpine`, `latest-10-alpine3.8`, `3-latest-alpine`, `3-latest-alpine3.8`, `3-10-alpine`, `3-10-alpine3.8`, `3.7-latest-alpine`, `3.7-latest-alpine3.8`, `3.7-10-alpine`, `3.7-10-alpine3.8`
-- __`3.7.0-8.12.0-alpine3.8`__: `latest-8-alpine`, `latest-8-alpine3.8`, `3-8-alpine`, `3-8-alpine3.8`, `3.7-8-alpine`, `3.7-8-alpine3.8`
-- __`3.7.0-6.14.4-alpine3.8`__: `latest-6-alpine`, `latest-6-alpine3.8`, `3-6-alpine`, `3-6-alpine3.8`, `3.7-6-alpine`, `3.7-6-alpine3.8`
-- __`3.6.6-10.10.0-alpine3.8`__: `3.6-latest-alpine`, `3.6-latest-alpine3.8`, `3.6-10-alpine`, `3.6-10-alpine3.8`
-- __`3.6.6-8.12.0-alpine3.8`__: `3.6-8-alpine`, `3.6-8-alpine3.8`
-- __`3.6.6-6.14.4-alpine3.8`__: `3.6-6-alpine`, `3.6-6-alpine3.8`
-- __`3.5.6-10.10.0-alpine3.8`__: `3.5-latest-alpine`, `3.5-latest-alpine3.8`, `3.5-10-alpine`, `3.5-10-alpine3.8`
-- __`3.5.6-8.12.0-alpine3.8`__: `3.5-8-alpine`, `3.5-8-alpine3.8`
-- __`3.5.6-6.14.4-alpine3.8`__: `3.5-6-alpine`, `3.5-6-alpine3.8`
-- __`2.7.15-10.10.0-alpine3.8`__: `2-latest-alpine`, `2-latest-alpine3.8`, `2-10-alpine`, `2-10-alpine3.8`, `2.7-latest-alpine`, `2.7-latest-alpine3.8`, `2.7-10-alpine`, `2.7-10-alpine3.8`
-- __`2.7.15-8.12.0-alpine3.8`__: `2-8-alpine`, `2-8-alpine3.8`, `2.7-8-alpine`, `2.7-8-alpine3.8`
-- __`2.7.15-6.14.4-alpine3.8`__: `2-6-alpine`, `2-6-alpine3.8`, `2.7-6-alpine`, `2.7-6-alpine3.8`
+- __`3.7.0-10.10.0-stretch`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.7.0-10.10.0-stretch.svg)](https://microbadger.com/images/airhorns/python-node:3.7.0-10.10.0-stretch) aliases: `latest-latest-stretch`, `latest-latest`, `latest-10-stretch`, `latest-10`, `3-latest-stretch`, `3-latest`, `3-10-stretch`, `3-10`, `3.7-latest-stretch`, `3.7-latest`, `3.7-10-stretch`, `3.7-10`
+- __`3.7.0-8.12.0-stretch`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.7.0-8.12.0-stretch.svg)](https://microbadger.com/images/airhorns/python-node:3.7.0-8.12.0-stretch) aliases: `latest-8-stretch`, `latest-8`, `3-8-stretch`, `3-8`, `3.7-8-stretch`, `3.7-8`
+- __`3.7.0-6.14.4-stretch`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.7.0-6.14.4-stretch.svg)](https://microbadger.com/images/airhorns/python-node:3.7.0-6.14.4-stretch) aliases: `latest-6-stretch`, `latest-6`, `3-6-stretch`, `3-6`, `3.7-6-stretch`, `3.7-6`
+- __`3.6.6-10.10.0-stretch`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.6.6-10.10.0-stretch.svg)](https://microbadger.com/images/airhorns/python-node:3.6.6-10.10.0-stretch) aliases: `3.6-latest-stretch`, `3.6-latest`, `3.6-10-stretch`, `3.6-10`
+- __`3.6.6-8.12.0-stretch`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.6.6-8.12.0-stretch.svg)](https://microbadger.com/images/airhorns/python-node:3.6.6-8.12.0-stretch) aliases: `3.6-8-stretch`, `3.6-8`
+- __`3.6.6-6.14.4-stretch`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.6.6-6.14.4-stretch.svg)](https://microbadger.com/images/airhorns/python-node:3.6.6-6.14.4-stretch) aliases: `3.6-6-stretch`, `3.6-6`
+- __`3.5.6-10.10.0-stretch`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.5.6-10.10.0-stretch.svg)](https://microbadger.com/images/airhorns/python-node:3.5.6-10.10.0-stretch) aliases: `3.5-latest-stretch`, `3.5-latest`, `3.5-10-stretch`, `3.5-10`
+- __`3.5.6-8.12.0-stretch`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.5.6-8.12.0-stretch.svg)](https://microbadger.com/images/airhorns/python-node:3.5.6-8.12.0-stretch) aliases: `3.5-8-stretch`, `3.5-8`
+- __`3.5.6-6.14.4-stretch`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.5.6-6.14.4-stretch.svg)](https://microbadger.com/images/airhorns/python-node:3.5.6-6.14.4-stretch) aliases: `3.5-6-stretch`, `3.5-6`
+- __`2.7.15-10.10.0-stretch`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:2.7.15-10.10.0-stretch.svg)](https://microbadger.com/images/airhorns/python-node:2.7.15-10.10.0-stretch) aliases: `2-latest-stretch`, `2-latest`, `2-10-stretch`, `2-10`, `2.7-latest-stretch`, `2.7-latest`, `2.7-10-stretch`, `2.7-10`
+- __`2.7.15-8.12.0-stretch`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:2.7.15-8.12.0-stretch.svg)](https://microbadger.com/images/airhorns/python-node:2.7.15-8.12.0-stretch) aliases: `2-8-stretch`, `2-8`, `2.7-8-stretch`, `2.7-8`
+- __`2.7.15-6.14.4-stretch`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:2.7.15-6.14.4-stretch.svg)](https://microbadger.com/images/airhorns/python-node:2.7.15-6.14.4-stretch) aliases: `2-6-stretch`, `2-6`, `2.7-6-stretch`, `2.7-6`
+- __`3.7.0-10.10.0-slim-stretch`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.7.0-10.10.0-slim-stretch.svg)](https://microbadger.com/images/airhorns/python-node:3.7.0-10.10.0-slim-stretch) aliases: `latest-latest-slim-stretch`, `latest-10-slim-stretch`, `3-latest-slim-stretch`, `3-10-slim-stretch`, `3.7-latest-slim-stretch`, `3.7-10-slim-stretch`
+- __`3.7.0-8.12.0-slim-stretch`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.7.0-8.12.0-slim-stretch.svg)](https://microbadger.com/images/airhorns/python-node:3.7.0-8.12.0-slim-stretch) aliases: `latest-8-slim-stretch`, `3-8-slim-stretch`, `3.7-8-slim-stretch`
+- __`3.7.0-6.14.4-slim-stretch`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.7.0-6.14.4-slim-stretch.svg)](https://microbadger.com/images/airhorns/python-node:3.7.0-6.14.4-slim-stretch) aliases: `latest-6-slim-stretch`, `3-6-slim-stretch`, `3.7-6-slim-stretch`
+- __`3.6.6-10.10.0-slim-stretch`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.6.6-10.10.0-slim-stretch.svg)](https://microbadger.com/images/airhorns/python-node:3.6.6-10.10.0-slim-stretch) aliases: `3.6-latest-slim-stretch`, `3.6-10-slim-stretch`
+- __`3.6.6-8.12.0-slim-stretch`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.6.6-8.12.0-slim-stretch.svg)](https://microbadger.com/images/airhorns/python-node:3.6.6-8.12.0-slim-stretch) aliases: `3.6-8-slim-stretch`
+- __`3.6.6-6.14.4-slim-stretch`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.6.6-6.14.4-slim-stretch.svg)](https://microbadger.com/images/airhorns/python-node:3.6.6-6.14.4-slim-stretch) aliases: `3.6-6-slim-stretch`
+- __`3.5.6-10.10.0-slim-stretch`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.5.6-10.10.0-slim-stretch.svg)](https://microbadger.com/images/airhorns/python-node:3.5.6-10.10.0-slim-stretch) aliases: `3.5-latest-slim-stretch`, `3.5-10-slim-stretch`
+- __`3.5.6-8.12.0-slim-stretch`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.5.6-8.12.0-slim-stretch.svg)](https://microbadger.com/images/airhorns/python-node:3.5.6-8.12.0-slim-stretch) aliases: `3.5-8-slim-stretch`
+- __`3.5.6-6.14.4-slim-stretch`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.5.6-6.14.4-slim-stretch.svg)](https://microbadger.com/images/airhorns/python-node:3.5.6-6.14.4-slim-stretch) aliases: `3.5-6-slim-stretch`
+- __`2.7.15-10.10.0-slim-stretch`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:2.7.15-10.10.0-slim-stretch.svg)](https://microbadger.com/images/airhorns/python-node:2.7.15-10.10.0-slim-stretch) aliases: `2-latest-slim-stretch`, `2-10-slim-stretch`, `2.7-latest-slim-stretch`, `2.7-10-slim-stretch`
+- __`2.7.15-8.12.0-slim-stretch`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:2.7.15-8.12.0-slim-stretch.svg)](https://microbadger.com/images/airhorns/python-node:2.7.15-8.12.0-slim-stretch) aliases: `2-8-slim-stretch`, `2.7-8-slim-stretch`
+- __`2.7.15-6.14.4-slim-stretch`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:2.7.15-6.14.4-slim-stretch.svg)](https://microbadger.com/images/airhorns/python-node:2.7.15-6.14.4-slim-stretch) aliases: `2-6-slim-stretch`, `2.7-6-slim-stretch`
+- __`3.7.0-10.10.0-alpine3.8`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.7.0-10.10.0-alpine3.8.svg)](https://microbadger.com/images/airhorns/python-node:3.7.0-10.10.0-alpine3.8) aliases: `latest-latest-alpine`, `latest-latest-alpine3.8`, `latest-10-alpine`, `latest-10-alpine3.8`, `3-latest-alpine`, `3-latest-alpine3.8`, `3-10-alpine`, `3-10-alpine3.8`, `3.7-latest-alpine`, `3.7-latest-alpine3.8`, `3.7-10-alpine`, `3.7-10-alpine3.8`
+- __`3.7.0-8.12.0-alpine3.8`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.7.0-8.12.0-alpine3.8.svg)](https://microbadger.com/images/airhorns/python-node:3.7.0-8.12.0-alpine3.8) aliases: `latest-8-alpine`, `latest-8-alpine3.8`, `3-8-alpine`, `3-8-alpine3.8`, `3.7-8-alpine`, `3.7-8-alpine3.8`
+- __`3.7.0-6.14.4-alpine3.8`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.7.0-6.14.4-alpine3.8.svg)](https://microbadger.com/images/airhorns/python-node:3.7.0-6.14.4-alpine3.8) aliases: `latest-6-alpine`, `latest-6-alpine3.8`, `3-6-alpine`, `3-6-alpine3.8`, `3.7-6-alpine`, `3.7-6-alpine3.8`
+- __`3.6.6-10.10.0-alpine3.8`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.6.6-10.10.0-alpine3.8.svg)](https://microbadger.com/images/airhorns/python-node:3.6.6-10.10.0-alpine3.8) aliases: `3.6-latest-alpine`, `3.6-latest-alpine3.8`, `3.6-10-alpine`, `3.6-10-alpine3.8`
+- __`3.6.6-8.12.0-alpine3.8`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.6.6-8.12.0-alpine3.8.svg)](https://microbadger.com/images/airhorns/python-node:3.6.6-8.12.0-alpine3.8) aliases: `3.6-8-alpine`, `3.6-8-alpine3.8`
+- __`3.6.6-6.14.4-alpine3.8`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.6.6-6.14.4-alpine3.8.svg)](https://microbadger.com/images/airhorns/python-node:3.6.6-6.14.4-alpine3.8) aliases: `3.6-6-alpine`, `3.6-6-alpine3.8`
+- __`3.5.6-10.10.0-alpine3.8`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.5.6-10.10.0-alpine3.8.svg)](https://microbadger.com/images/airhorns/python-node:3.5.6-10.10.0-alpine3.8) aliases: `3.5-latest-alpine`, `3.5-latest-alpine3.8`, `3.5-10-alpine`, `3.5-10-alpine3.8`
+- __`3.5.6-8.12.0-alpine3.8`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.5.6-8.12.0-alpine3.8.svg)](https://microbadger.com/images/airhorns/python-node:3.5.6-8.12.0-alpine3.8) aliases: `3.5-8-alpine`, `3.5-8-alpine3.8`
+- __`3.5.6-6.14.4-alpine3.8`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.5.6-6.14.4-alpine3.8.svg)](https://microbadger.com/images/airhorns/python-node:3.5.6-6.14.4-alpine3.8) aliases: `3.5-6-alpine`, `3.5-6-alpine3.8`
+- __`2.7.15-10.10.0-alpine3.8`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:2.7.15-10.10.0-alpine3.8.svg)](https://microbadger.com/images/airhorns/python-node:2.7.15-10.10.0-alpine3.8) aliases: `2-latest-alpine`, `2-latest-alpine3.8`, `2-10-alpine`, `2-10-alpine3.8`, `2.7-latest-alpine`, `2.7-latest-alpine3.8`, `2.7-10-alpine`, `2.7-10-alpine3.8`
+- __`2.7.15-8.12.0-alpine3.8`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:2.7.15-8.12.0-alpine3.8.svg)](https://microbadger.com/images/airhorns/python-node:2.7.15-8.12.0-alpine3.8) aliases: `2-8-alpine`, `2-8-alpine3.8`, `2.7-8-alpine`, `2.7-8-alpine3.8`
+- __`2.7.15-6.14.4-alpine3.8`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:2.7.15-6.14.4-alpine3.8.svg)](https://microbadger.com/images/airhorns/python-node:2.7.15-6.14.4-alpine3.8) aliases: `2-6-alpine`, `2-6-alpine3.8`, `2.7-6-alpine`, `2.7-6-alpine3.8`
 See the complete list at https://hub.docker.com/r/airhorns/python-node/tags/.
 
 # Usage

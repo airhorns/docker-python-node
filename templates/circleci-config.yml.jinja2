@@ -11,11 +11,13 @@ jobs:
           command: docker build -t {{ build['tag'] }} dockerfiles/{{ build['filename'] | dirname }}/.
       - run:
           name: Test container
-          command: docker run {{ build['tag'] }} -- python --version && node --version
+          command: |
+            docker run {{ build['tag'] }} python --version
+            docker run {{ build['tag'] }} node --version
       - run:
           name: Push container
           command: |
-            docker login --username airhorns --password-stdin < $DOCKER_HUB_PASSWORD
+            echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push {{ build['tag'] }}
   {% endfor %}
 

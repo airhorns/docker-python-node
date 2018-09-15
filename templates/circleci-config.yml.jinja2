@@ -17,7 +17,7 @@ jobs:
       - run:
           name: Test container
           command: |
-            docker run {{ build['image_name'] }}:{{ build['image_name'] }}:{{ build['tag'] }} python --version
+            docker run {{ build['image_name'] }}:{{ build['tag'] }} python --version
             docker run {{ build['image_name'] }}:{{ build['tag'] }} node --version
       - run:
           name: Push container if master

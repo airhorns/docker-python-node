@@ -70,6 +70,13 @@ def write_circleconfig(builds):
         print(f'Generated circleci config')
 
 
+def write_readme(builds):
+    readme_template = env.get_template('Readme.md.jinja2')
+    with open(os.path.join(current_directory, 'Readme.md'), 'w') as f:
+        f.write(readme_template.render(config=config, builds=builds))
+        print(f'Generated Readme')
+
+
 reset_output()
 builds = []
 
@@ -92,3 +99,4 @@ for base, base_properties in config['bases'].items():
 
 
 write_circleconfig(builds)
+write_readme(builds)

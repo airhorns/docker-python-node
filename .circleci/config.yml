@@ -67,6 +67,9 @@ jobs:
             docker tag airhorns/python-node:3.7.0-10.10.0-stretch airhorns/python-node:3.7-10
             docker push airhorns/python-node:3.7-10
             
+            docker tag airhorns/python-node:3.7.0-10.10.0-stretch airhorns/python-node:latest
+            docker push airhorns/python-node:latest
+            
   
   "build 3.7.0-8.12.0-stretch":
     machine:

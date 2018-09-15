@@ -27,10 +27,16 @@ def alias_tags(python_aliases, node_aliases, base, base_properties):
     if base_properties.get('default', False):
         base_aliases.append("")
 
-    return list(map(
+    aliases = list(map(
         "".join,
         itertools.product(python_aliases, map(hyphenize, node_aliases), base_aliases)
     ))
+
+    for reference, top_level_alias in config['top_level_aliases'].items():
+        if reference in aliases:
+            aliases.append(top_level_alias)
+
+    return aliases
 
 
 def reset_output():

@@ -19,7 +19,7 @@ node_versions:
     aliases: ['6']
 
 top_level_aliases:
-  latest: 'latest-latest-stretch'
+  latest-latest-stretch: 'latest'
 
 bases:
   stretch:

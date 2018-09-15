@@ -53,7 +53,7 @@ Node:
 
 The currently built tags are:
 
-- __`3.7.0-10.10.0-stretch`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.7.0-10.10.0-stretch.svg)](https://microbadger.com/images/airhorns/python-node:3.7.0-10.10.0-stretch) aliases: `latest-latest-stretch`, `latest-latest`, `latest-10-stretch`, `latest-10`, `3-latest-stretch`, `3-latest`, `3-10-stretch`, `3-10`, `3.7-latest-stretch`, `3.7-latest`, `3.7-10-stretch`, `3.7-10`
+- __`3.7.0-10.10.0-stretch`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.7.0-10.10.0-stretch.svg)](https://microbadger.com/images/airhorns/python-node:3.7.0-10.10.0-stretch) aliases: `latest-latest-stretch`, `latest-latest`, `latest-10-stretch`, `latest-10`, `3-latest-stretch`, `3-latest`, `3-10-stretch`, `3-10`, `3.7-latest-stretch`, `3.7-latest`, `3.7-10-stretch`, `3.7-10`, `latest`
 - __`3.7.0-8.12.0-stretch`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.7.0-8.12.0-stretch.svg)](https://microbadger.com/images/airhorns/python-node:3.7.0-8.12.0-stretch) aliases: `latest-8-stretch`, `latest-8`, `3-8-stretch`, `3-8`, `3.7-8-stretch`, `3.7-8`
 - __`3.7.0-6.14.4-stretch`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.7.0-6.14.4-stretch.svg)](https://microbadger.com/images/airhorns/python-node:3.7.0-6.14.4-stretch) aliases: `latest-6-stretch`, `latest-6`, `3-6-stretch`, `3-6`, `3.7-6-stretch`, `3.7-6`
 - __`3.6.6-10.10.0-stretch`__: [![](https://images.microbadger.com/badges/image/airhorns/python-node:3.6.6-10.10.0-stretch.svg)](https://microbadger.com/images/airhorns/python-node:3.6.6-10.10.0-stretch) aliases: `3.6-latest-stretch`, `3.6-latest`, `3.6-10-stretch`, `3.6-10`

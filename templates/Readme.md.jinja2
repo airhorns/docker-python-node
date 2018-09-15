@@ -4,9 +4,9 @@ and then rerun generate.py. See below for more details. Weird, I know, but its t
 up to date!
 --->
 
-# docker-python-node
+# docker-python-node [![CircleCI](https://circleci.com/gh/airhorns/docker-python-node.svg?style=svg)](https://circleci.com/gh/airhorns/docker-python-node)
 
-Handy Docker containers with python and node installed securely to use as base Docker images for your application.
+Handy Docker containers with python and node installed securely to use as base Docker images for your application. 🐳✅
 
 # How to Use
 

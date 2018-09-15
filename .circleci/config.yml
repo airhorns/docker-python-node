@@ -31,40 +31,40 @@ jobs:
             docker push airhorns/python-node:3.7.0-10.10.0-stretch
 
             
-            docker tag airhorns/python-node:3.7.0-10.10.0-stretch latest-latest-stretch
+            docker tag airhorns/python-node:3.7.0-10.10.0-stretch airhorns/python-node:latest-latest-stretch
             docker push airhorns/python-node:latest-latest-stretch
             
-            docker tag airhorns/python-node:3.7.0-10.10.0-stretch latest-latest
+            docker tag airhorns/python-node:3.7.0-10.10.0-stretch airhorns/python-node:latest-latest
             docker push airhorns/python-node:latest-latest
             
-            docker tag airhorns/python-node:3.7.0-10.10.0-stretch latest-10-stretch
+            docker tag airhorns/python-node:3.7.0-10.10.0-stretch airhorns/python-node:latest-10-stretch
             docker push airhorns/python-node:latest-10-stretch
             
-            docker tag airhorns/python-node:3.7.0-10.10.0-stretch latest-10
+            docker tag airhorns/python-node:3.7.0-10.10.0-stretch airhorns/python-node:latest-10
             docker push airhorns/python-node:latest-10
             
-            docker tag airhorns/python-node:3.7.0-10.10.0-stretch 3-latest-stretch
+            docker tag airhorns/python-node:3.7.0-10.10.0-stretch airhorns/python-node:3-latest-stretch
             docker push airhorns/python-node:3-latest-stretch
             
-            docker tag airhorns/python-node:3.7.0-10.10.0-stretch 3-latest
+            docker tag airhorns/python-node:3.7.0-10.10.0-stretch airhorns/python-node:3-latest
             docker push airhorns/python-node:3-latest
             
-            docker tag airhorns/python-node:3.7.0-10.10.0-stretch 3-10-stretch
+            docker tag airhorns/python-node:3.7.0-10.10.0-stretch airhorns/python-node:3-10-stretch
             docker push airhorns/python-node:3-10-stretch
             
-            docker tag airhorns/python-node:3.7.0-10.10.0-stretch 3-10
+            docker tag airhorns/python-node:3.7.0-10.10.0-stretch airhorns/python-node:3-10
             docker push airhorns/python-node:3-10
             
-            docker tag airhorns/python-node:3.7.0-10.10.0-stretch 3.7-latest-stretch
+            docker tag airhorns/python-node:3.7.0-10.10.0-stretch airhorns/python-node:3.7-latest-stretch
             docker push airhorns/python-node:3.7-latest-stretch
             
-            docker tag airhorns/python-node:3.7.0-10.10.0-stretch 3.7-latest
+            docker tag airhorns/python-node:3.7.0-10.10.0-stretch airhorns/python-node:3.7-latest
             docker push airhorns/python-node:3.7-latest
             
-            docker tag airhorns/python-node:3.7.0-10.10.0-stretch 3.7-10-stretch
+            docker tag airhorns/python-node:3.7.0-10.10.0-stretch airhorns/python-node:3.7-10-stretch
             docker push airhorns/python-node:3.7-10-stretch
             
-            docker tag airhorns/python-node:3.7.0-10.10.0-stretch 3.7-10
+            docker tag airhorns/python-node:3.7.0-10.10.0-stretch airhorns/python-node:3.7-10
             docker push airhorns/python-node:3.7-10
             
   
@@ -93,22 +93,22 @@ jobs:
             docker push airhorns/python-node:3.7.0-8.12.0-stretch
 
             
-            docker tag airhorns/python-node:3.7.0-8.12.0-stretch latest-8-stretch
+            docker tag airhorns/python-node:3.7.0-8.12.0-stretch airhorns/python-node:latest-8-stretch
             docker push airhorns/python-node:latest-8-stretch
             
-            docker tag airhorns/python-node:3.7.0-8.12.0-stretch latest-8
+            docker tag airhorns/python-node:3.7.0-8.12.0-stretch airhorns/python-node:latest-8
             docker push airhorns/python-node:latest-8
             
-            docker tag airhorns/python-node:3.7.0-8.12.0-stretch 3-8-stretch
+            docker tag airhorns/python-node:3.7.0-8.12.0-stretch airhorns/python-node:3-8-stretch
             docker push airhorns/python-node:3-8-stretch
             
-            docker tag airhorns/python-node:3.7.0-8.12.0-stretch 3-8
+            docker tag airhorns/python-node:3.7.0-8.12.0-stretch airhorns/python-node:3-8
             docker push airhorns/python-node:3-8
             
-            docker tag airhorns/python-node:3.7.0-8.12.0-stretch 3.7-8-stretch
+            docker tag airhorns/python-node:3.7.0-8.12.0-stretch airhorns/python-node:3.7-8-stretch
             docker push airhorns/python-node:3.7-8-stretch
             
-            docker tag airhorns/python-node:3.7.0-8.12.0-stretch 3.7-8
+            docker tag airhorns/python-node:3.7.0-8.12.0-stretch airhorns/python-node:3.7-8
             docker push airhorns/python-node:3.7-8
             
   
@@ -137,22 +137,22 @@ jobs:
             docker push airhorns/python-node:3.7.0-6.14.4-stretch
 
             
-            docker tag airhorns/python-node:3.7.0-6.14.4-stretch latest-6-stretch
+            docker tag airhorns/python-node:3.7.0-6.14.4-stretch airhorns/python-node:latest-6-stretch
             docker push airhorns/python-node:latest-6-stretch
             
-            docker tag airhorns/python-node:3.7.0-6.14.4-stretch latest-6
+            docker tag airhorns/python-node:3.7.0-6.14.4-stretch airhorns/python-node:latest-6
             docker push airhorns/python-node:latest-6
             
-            docker tag airhorns/python-node:3.7.0-6.14.4-stretch 3-6-stretch
+            docker tag airhorns/python-node:3.7.0-6.14.4-stretch airhorns/python-node:3-6-stretch
             docker push airhorns/python-node:3-6-stretch
             
-            docker tag airhorns/python-node:3.7.0-6.14.4-stretch 3-6
+            docker tag airhorns/python-node:3.7.0-6.14.4-stretch airhorns/python-node:3-6
             docker push airhorns/python-node:3-6
             
-            docker tag airhorns/python-node:3.7.0-6.14.4-stretch 3.7-6-stretch
+            docker tag airhorns/python-node:3.7.0-6.14.4-stretch airhorns/python-node:3.7-6-stretch
             docker push airhorns/python-node:3.7-6-stretch
             
-            docker tag airhorns/python-node:3.7.0-6.14.4-stretch 3.7-6
+            docker tag airhorns/python-node:3.7.0-6.14.4-stretch airhorns/python-node:3.7-6
             docker push airhorns/python-node:3.7-6
             
   
@@ -181,16 +181,16 @@ jobs:
             docker push airhorns/python-node:3.6.6-10.10.0-stretch
 
             
-            docker tag airhorns/python-node:3.6.6-10.10.0-stretch 3.6-latest-stretch
+            docker tag airhorns/python-node:3.6.6-10.10.0-stretch airhorns/python-node:3.6-latest-stretch
             docker push airhorns/python-node:3.6-latest-stretch
             
-            docker tag airhorns/python-node:3.6.6-10.10.0-stretch 3.6-latest
+            docker tag airhorns/python-node:3.6.6-10.10.0-stretch airhorns/python-node:3.6-latest
             docker push airhorns/python-node:3.6-latest
             
-            docker tag airhorns/python-node:3.6.6-10.10.0-stretch 3.6-10-stretch
+            docker tag airhorns/python-node:3.6.6-10.10.0-stretch airhorns/python-node:3.6-10-stretch
             docker push airhorns/python-node:3.6-10-stretch
             
-            docker tag airhorns/python-node:3.6.6-10.10.0-stretch 3.6-10
+            docker tag airhorns/python-node:3.6.6-10.10.0-stretch airhorns/python-node:3.6-10
             docker push airhorns/python-node:3.6-10
             
   
@@ -219,10 +219,10 @@ jobs:
             docker push airhorns/python-node:3.6.6-8.12.0-stretch
 
             
-            docker tag airhorns/python-node:3.6.6-8.12.0-stretch 3.6-8-stretch
+            docker tag airhorns/python-node:3.6.6-8.12.0-stretch airhorns/python-node:3.6-8-stretch
             docker push airhorns/python-node:3.6-8-stretch
             
-            docker tag airhorns/python-node:3.6.6-8.12.0-stretch 3.6-8
+            docker tag airhorns/python-node:3.6.6-8.12.0-stretch airhorns/python-node:3.6-8
             docker push airhorns/python-node:3.6-8
             
   
@@ -251,10 +251,10 @@ jobs:
             docker push airhorns/python-node:3.6.6-6.14.4-stretch
 
             
-            docker tag airhorns/python-node:3.6.6-6.14.4-stretch 3.6-6-stretch
+            docker tag airhorns/python-node:3.6.6-6.14.4-stretch airhorns/python-node:3.6-6-stretch
             docker push airhorns/python-node:3.6-6-stretch
             
-            docker tag airhorns/python-node:3.6.6-6.14.4-stretch 3.6-6
+            docker tag airhorns/python-node:3.6.6-6.14.4-stretch airhorns/python-node:3.6-6
             docker push airhorns/python-node:3.6-6
             
   
@@ -283,16 +283,16 @@ jobs:
             docker push airhorns/python-node:3.5.6-10.10.0-stretch
 
             
-            docker tag airhorns/python-node:3.5.6-10.10.0-stretch 3.5-latest-stretch
+            docker tag airhorns/python-node:3.5.6-10.10.0-stretch airhorns/python-node:3.5-latest-stretch
             docker push airhorns/python-node:3.5-latest-stretch
             
-            docker tag airhorns/python-node:3.5.6-10.10.0-stretch 3.5-latest
+            docker tag airhorns/python-node:3.5.6-10.10.0-stretch airhorns/python-node:3.5-latest
             docker push airhorns/python-node:3.5-latest
             
-            docker tag airhorns/python-node:3.5.6-10.10.0-stretch 3.5-10-stretch
+            docker tag airhorns/python-node:3.5.6-10.10.0-stretch airhorns/python-node:3.5-10-stretch
             docker push airhorns/python-node:3.5-10-stretch
             
-            docker tag airhorns/python-node:3.5.6-10.10.0-stretch 3.5-10
+            docker tag airhorns/python-node:3.5.6-10.10.0-stretch airhorns/python-node:3.5-10
             docker push airhorns/python-node:3.5-10
             
   
@@ -321,10 +321,10 @@ jobs:
             docker push airhorns/python-node:3.5.6-8.12.0-stretch
 
             
-            docker tag airhorns/python-node:3.5.6-8.12.0-stretch 3.5-8-stretch
+            docker tag airhorns/python-node:3.5.6-8.12.0-stretch airhorns/python-node:3.5-8-stretch
             docker push airhorns/python-node:3.5-8-stretch
             
-            docker tag airhorns/python-node:3.5.6-8.12.0-stretch 3.5-8
+            docker tag airhorns/python-node:3.5.6-8.12.0-stretch airhorns/python-node:3.5-8
             docker push airhorns/python-node:3.5-8
             
   
@@ -353,10 +353,10 @@ jobs:
             docker push airhorns/python-node:3.5.6-6.14.4-stretch
 
             
-            docker tag airhorns/python-node:3.5.6-6.14.4-stretch 3.5-6-stretch
+            docker tag airhorns/python-node:3.5.6-6.14.4-stretch airhorns/python-node:3.5-6-stretch
             docker push airhorns/python-node:3.5-6-stretch
             
-            docker tag airhorns/python-node:3.5.6-6.14.4-stretch 3.5-6
+            docker tag airhorns/python-node:3.5.6-6.14.4-stretch airhorns/python-node:3.5-6
             docker push airhorns/python-node:3.5-6
             
   
@@ -385,28 +385,28 @@ jobs:
             docker push airhorns/python-node:2.7.15-10.10.0-stretch
 
             
-            docker tag airhorns/python-node:2.7.15-10.10.0-stretch 2-latest-stretch
+            docker tag airhorns/python-node:2.7.15-10.10.0-stretch airhorns/python-node:2-latest-stretch
             docker push airhorns/python-node:2-latest-stretch
             
-            docker tag airhorns/python-node:2.7.15-10.10.0-stretch 2-latest
+            docker tag airhorns/python-node:2.7.15-10.10.0-stretch airhorns/python-node:2-latest
             docker push airhorns/python-node:2-latest
             
-            docker tag airhorns/python-node:2.7.15-10.10.0-stretch 2-10-stretch
+            docker tag airhorns/python-node:2.7.15-10.10.0-stretch airhorns/python-node:2-10-stretch
             docker push airhorns/python-node:2-10-stretch
             
-            docker tag airhorns/python-node:2.7.15-10.10.0-stretch 2-10
+            docker tag airhorns/python-node:2.7.15-10.10.0-stretch airhorns/python-node:2-10
             docker push airhorns/python-node:2-10
             
-            docker tag airhorns/python-node:2.7.15-10.10.0-stretch 2.7-latest-stretch
+            docker tag airhorns/python-node:2.7.15-10.10.0-stretch airhorns/python-node:2.7-latest-stretch
             docker push airhorns/python-node:2.7-latest-stretch
             
-            docker tag airhorns/python-node:2.7.15-10.10.0-stretch 2.7-latest
+            docker tag airhorns/python-node:2.7.15-10.10.0-stretch airhorns/python-node:2.7-latest
             docker push airhorns/python-node:2.7-latest
             
-            docker tag airhorns/python-node:2.7.15-10.10.0-stretch 2.7-10-stretch
+            docker tag airhorns/python-node:2.7.15-10.10.0-stretch airhorns/python-node:2.7-10-stretch
             docker push airhorns/python-node:2.7-10-stretch
             
-            docker tag airhorns/python-node:2.7.15-10.10.0-stretch 2.7-10
+            docker tag airhorns/python-node:2.7.15-10.10.0-stretch airhorns/python-node:2.7-10
             docker push airhorns/python-node:2.7-10
             
   
@@ -435,16 +435,16 @@ jobs:
             docker push airhorns/python-node:2.7.15-8.12.0-stretch
 
             
-            docker tag airhorns/python-node:2.7.15-8.12.0-stretch 2-8-stretch
+            docker tag airhorns/python-node:2.7.15-8.12.0-stretch airhorns/python-node:2-8-stretch
             docker push airhorns/python-node:2-8-stretch
             
-            docker tag airhorns/python-node:2.7.15-8.12.0-stretch 2-8
+            docker tag airhorns/python-node:2.7.15-8.12.0-stretch airhorns/python-node:2-8
             docker push airhorns/python-node:2-8
             
-            docker tag airhorns/python-node:2.7.15-8.12.0-stretch 2.7-8-stretch
+            docker tag airhorns/python-node:2.7.15-8.12.0-stretch airhorns/python-node:2.7-8-stretch
             docker push airhorns/python-node:2.7-8-stretch
             
-            docker tag airhorns/python-node:2.7.15-8.12.0-stretch 2.7-8
+            docker tag airhorns/python-node:2.7.15-8.12.0-stretch airhorns/python-node:2.7-8
             docker push airhorns/python-node:2.7-8
             
   
@@ -473,16 +473,16 @@ jobs:
             docker push airhorns/python-node:2.7.15-6.14.4-stretch
 
             
-            docker tag airhorns/python-node:2.7.15-6.14.4-stretch 2-6-stretch
+            docker tag airhorns/python-node:2.7.15-6.14.4-stretch airhorns/python-node:2-6-stretch
             docker push airhorns/python-node:2-6-stretch
             
-            docker tag airhorns/python-node:2.7.15-6.14.4-stretch 2-6
+            docker tag airhorns/python-node:2.7.15-6.14.4-stretch airhorns/python-node:2-6
             docker push airhorns/python-node:2-6
             
-            docker tag airhorns/python-node:2.7.15-6.14.4-stretch 2.7-6-stretch
+            docker tag airhorns/python-node:2.7.15-6.14.4-stretch airhorns/python-node:2.7-6-stretch
             docker push airhorns/python-node:2.7-6-stretch
             
-            docker tag airhorns/python-node:2.7.15-6.14.4-stretch 2.7-6
+            docker tag airhorns/python-node:2.7.15-6.14.4-stretch airhorns/python-node:2.7-6
             docker push airhorns/python-node:2.7-6
             
   
@@ -511,22 +511,22 @@ jobs:
             docker push airhorns/python-node:3.7.0-10.10.0-slim-stretch
 
             
-            docker tag airhorns/python-node:3.7.0-10.10.0-slim-stretch latest-latest-slim-stretch
+            docker tag airhorns/python-node:3.7.0-10.10.0-slim-stretch airhorns/python-node:latest-latest-slim-stretch
             docker push airhorns/python-node:latest-latest-slim-stretch
             
-            docker tag airhorns/python-node:3.7.0-10.10.0-slim-stretch latest-10-slim-stretch
+            docker tag airhorns/python-node:3.7.0-10.10.0-slim-stretch airhorns/python-node:latest-10-slim-stretch
             docker push airhorns/python-node:latest-10-slim-stretch
             
-            docker tag airhorns/python-node:3.7.0-10.10.0-slim-stretch 3-latest-slim-stretch
+            docker tag airhorns/python-node:3.7.0-10.10.0-slim-stretch airhorns/python-node:3-latest-slim-stretch
             docker push airhorns/python-node:3-latest-slim-stretch
             
-            docker tag airhorns/python-node:3.7.0-10.10.0-slim-stretch 3-10-slim-stretch
+            docker tag airhorns/python-node:3.7.0-10.10.0-slim-stretch airhorns/python-node:3-10-slim-stretch
             docker push airhorns/python-node:3-10-slim-stretch
             
-            docker tag airhorns/python-node:3.7.0-10.10.0-slim-stretch 3.7-latest-slim-stretch
+            docker tag airhorns/python-node:3.7.0-10.10.0-slim-stretch airhorns/python-node:3.7-latest-slim-stretch
             docker push airhorns/python-node:3.7-latest-slim-stretch
             
-            docker tag airhorns/python-node:3.7.0-10.10.0-slim-stretch 3.7-10-slim-stretch
+            docker tag airhorns/python-node:3.7.0-10.10.0-slim-stretch airhorns/python-node:3.7-10-slim-stretch
             docker push airhorns/python-node:3.7-10-slim-stretch
             
   
@@ -555,13 +555,13 @@ jobs:
             docker push airhorns/python-node:3.7.0-8.12.0-slim-stretch
 
             
-            docker tag airhorns/python-node:3.7.0-8.12.0-slim-stretch latest-8-slim-stretch
+            docker tag airhorns/python-node:3.7.0-8.12.0-slim-stretch airhorns/python-node:latest-8-slim-stretch
             docker push airhorns/python-node:latest-8-slim-stretch
             
-            docker tag airhorns/python-node:3.7.0-8.12.0-slim-stretch 3-8-slim-stretch
+            docker tag airhorns/python-node:3.7.0-8.12.0-slim-stretch airhorns/python-node:3-8-slim-stretch
             docker push airhorns/python-node:3-8-slim-stretch
             
-            docker tag airhorns/python-node:3.7.0-8.12.0-slim-stretch 3.7-8-slim-stretch
+            docker tag airhorns/python-node:3.7.0-8.12.0-slim-stretch airhorns/python-node:3.7-8-slim-stretch
             docker push airhorns/python-node:3.7-8-slim-stretch
             
   
@@ -590,13 +590,13 @@ jobs:
             docker push airhorns/python-node:3.7.0-6.14.4-slim-stretch
 
             
-            docker tag airhorns/python-node:3.7.0-6.14.4-slim-stretch latest-6-slim-stretch
+            docker tag airhorns/python-node:3.7.0-6.14.4-slim-stretch airhorns/python-node:latest-6-slim-stretch
             docker push airhorns/python-node:latest-6-slim-stretch
             
-            docker tag airhorns/python-node:3.7.0-6.14.4-slim-stretch 3-6-slim-stretch
+            docker tag airhorns/python-node:3.7.0-6.14.4-slim-stretch airhorns/python-node:3-6-slim-stretch
             docker push airhorns/python-node:3-6-slim-stretch
             
-            docker tag airhorns/python-node:3.7.0-6.14.4-slim-stretch 3.7-6-slim-stretch
+            docker tag airhorns/python-node:3.7.0-6.14.4-slim-stretch airhorns/python-node:3.7-6-slim-stretch
             docker push airhorns/python-node:3.7-6-slim-stretch
             
   
@@ -625,10 +625,10 @@ jobs:
             docker push airhorns/python-node:3.6.6-10.10.0-slim-stretch
 
             
-            docker tag airhorns/python-node:3.6.6-10.10.0-slim-stretch 3.6-latest-slim-stretch
+            docker tag airhorns/python-node:3.6.6-10.10.0-slim-stretch airhorns/python-node:3.6-latest-slim-stretch
             docker push airhorns/python-node:3.6-latest-slim-stretch
             
-            docker tag airhorns/python-node:3.6.6-10.10.0-slim-stretch 3.6-10-slim-stretch
+            docker tag airhorns/python-node:3.6.6-10.10.0-slim-stretch airhorns/python-node:3.6-10-slim-stretch
             docker push airhorns/python-node:3.6-10-slim-stretch
             
   
@@ -657,7 +657,7 @@ jobs:
             docker push airhorns/python-node:3.6.6-8.12.0-slim-stretch
 
             
-            docker tag airhorns/python-node:3.6.6-8.12.0-slim-stretch 3.6-8-slim-stretch
+            docker tag airhorns/python-node:3.6.6-8.12.0-slim-stretch airhorns/python-node:3.6-8-slim-stretch
             docker push airhorns/python-node:3.6-8-slim-stretch
             
   
@@ -686,7 +686,7 @@ jobs:
             docker push airhorns/python-node:3.6.6-6.14.4-slim-stretch
 
             
-            docker tag airhorns/python-node:3.6.6-6.14.4-slim-stretch 3.6-6-slim-stretch
+            docker tag airhorns/python-node:3.6.6-6.14.4-slim-stretch airhorns/python-node:3.6-6-slim-stretch
             docker push airhorns/python-node:3.6-6-slim-stretch
             
   
@@ -715,10 +715,10 @@ jobs:
             docker push airhorns/python-node:3.5.6-10.10.0-slim-stretch
 
             
-            docker tag airhorns/python-node:3.5.6-10.10.0-slim-stretch 3.5-latest-slim-stretch
+            docker tag airhorns/python-node:3.5.6-10.10.0-slim-stretch airhorns/python-node:3.5-latest-slim-stretch
             docker push airhorns/python-node:3.5-latest-slim-stretch
             
-            docker tag airhorns/python-node:3.5.6-10.10.0-slim-stretch 3.5-10-slim-stretch
+            docker tag airhorns/python-node:3.5.6-10.10.0-slim-stretch airhorns/python-node:3.5-10-slim-stretch
             docker push airhorns/python-node:3.5-10-slim-stretch
             
   
@@ -747,7 +747,7 @@ jobs:
             docker push airhorns/python-node:3.5.6-8.12.0-slim-stretch
 
             
-            docker tag airhorns/python-node:3.5.6-8.12.0-slim-stretch 3.5-8-slim-stretch
+            docker tag airhorns/python-node:3.5.6-8.12.0-slim-stretch airhorns/python-node:3.5-8-slim-stretch
             docker push airhorns/python-node:3.5-8-slim-stretch
             
   
@@ -776,7 +776,7 @@ jobs:
             docker push airhorns/python-node:3.5.6-6.14.4-slim-stretch
 
             
-            docker tag airhorns/python-node:3.5.6-6.14.4-slim-stretch 3.5-6-slim-stretch
+            docker tag airhorns/python-node:3.5.6-6.14.4-slim-stretch airhorns/python-node:3.5-6-slim-stretch
             docker push airhorns/python-node:3.5-6-slim-stretch
             
   
@@ -805,16 +805,16 @@ jobs:
             docker push airhorns/python-node:2.7.15-10.10.0-slim-stretch
 
             
-            docker tag airhorns/python-node:2.7.15-10.10.0-slim-stretch 2-latest-slim-stretch
+            docker tag airhorns/python-node:2.7.15-10.10.0-slim-stretch airhorns/python-node:2-latest-slim-stretch
             docker push airhorns/python-node:2-latest-slim-stretch
             
-            docker tag airhorns/python-node:2.7.15-10.10.0-slim-stretch 2-10-slim-stretch
+            docker tag airhorns/python-node:2.7.15-10.10.0-slim-stretch airhorns/python-node:2-10-slim-stretch
             docker push airhorns/python-node:2-10-slim-stretch
             
-            docker tag airhorns/python-node:2.7.15-10.10.0-slim-stretch 2.7-latest-slim-stretch
+            docker tag airhorns/python-node:2.7.15-10.10.0-slim-stretch airhorns/python-node:2.7-latest-slim-stretch
             docker push airhorns/python-node:2.7-latest-slim-stretch
             
-            docker tag airhorns/python-node:2.7.15-10.10.0-slim-stretch 2.7-10-slim-stretch
+            docker tag airhorns/python-node:2.7.15-10.10.0-slim-stretch airhorns/python-node:2.7-10-slim-stretch
             docker push airhorns/python-node:2.7-10-slim-stretch
             
   
@@ -843,10 +843,10 @@ jobs:
             docker push airhorns/python-node:2.7.15-8.12.0-slim-stretch
 
             
-            docker tag airhorns/python-node:2.7.15-8.12.0-slim-stretch 2-8-slim-stretch
+            docker tag airhorns/python-node:2.7.15-8.12.0-slim-stretch airhorns/python-node:2-8-slim-stretch
             docker push airhorns/python-node:2-8-slim-stretch
             
-            docker tag airhorns/python-node:2.7.15-8.12.0-slim-stretch 2.7-8-slim-stretch
+            docker tag airhorns/python-node:2.7.15-8.12.0-slim-stretch airhorns/python-node:2.7-8-slim-stretch
             docker push airhorns/python-node:2.7-8-slim-stretch
             
   
@@ -875,10 +875,10 @@ jobs:
             docker push airhorns/python-node:2.7.15-6.14.4-slim-stretch
 
             
-            docker tag airhorns/python-node:2.7.15-6.14.4-slim-stretch 2-6-slim-stretch
+            docker tag airhorns/python-node:2.7.15-6.14.4-slim-stretch airhorns/python-node:2-6-slim-stretch
             docker push airhorns/python-node:2-6-slim-stretch
             
-            docker tag airhorns/python-node:2.7.15-6.14.4-slim-stretch 2.7-6-slim-stretch
+            docker tag airhorns/python-node:2.7.15-6.14.4-slim-stretch airhorns/python-node:2.7-6-slim-stretch
             docker push airhorns/python-node:2.7-6-slim-stretch
             
   
@@ -907,40 +907,40 @@ jobs:
             docker push airhorns/python-node:3.7.0-10.10.0-alpine3.8
 
             
-            docker tag airhorns/python-node:3.7.0-10.10.0-alpine3.8 latest-latest-alpine
+            docker tag airhorns/python-node:3.7.0-10.10.0-alpine3.8 airhorns/python-node:latest-latest-alpine
             docker push airhorns/python-node:latest-latest-alpine
             
-            docker tag airhorns/python-node:3.7.0-10.10.0-alpine3.8 latest-latest-alpine3.8
+            docker tag airhorns/python-node:3.7.0-10.10.0-alpine3.8 airhorns/python-node:latest-latest-alpine3.8
             docker push airhorns/python-node:latest-latest-alpine3.8
             
-            docker tag airhorns/python-node:3.7.0-10.10.0-alpine3.8 latest-10-alpine
+            docker tag airhorns/python-node:3.7.0-10.10.0-alpine3.8 airhorns/python-node:latest-10-alpine
             docker push airhorns/python-node:latest-10-alpine
             
-            docker tag airhorns/python-node:3.7.0-10.10.0-alpine3.8 latest-10-alpine3.8
+            docker tag airhorns/python-node:3.7.0-10.10.0-alpine3.8 airhorns/python-node:latest-10-alpine3.8
             docker push airhorns/python-node:latest-10-alpine3.8
             
-            docker tag airhorns/python-node:3.7.0-10.10.0-alpine3.8 3-latest-alpine
+            docker tag airhorns/python-node:3.7.0-10.10.0-alpine3.8 airhorns/python-node:3-latest-alpine
             docker push airhorns/python-node:3-latest-alpine
             
-            docker tag airhorns/python-node:3.7.0-10.10.0-alpine3.8 3-latest-alpine3.8
+            docker tag airhorns/python-node:3.7.0-10.10.0-alpine3.8 airhorns/python-node:3-latest-alpine3.8
             docker push airhorns/python-node:3-latest-alpine3.8
             
-            docker tag airhorns/python-node:3.7.0-10.10.0-alpine3.8 3-10-alpine
+            docker tag airhorns/python-node:3.7.0-10.10.0-alpine3.8 airhorns/python-node:3-10-alpine
             docker push airhorns/python-node:3-10-alpine
             
-            docker tag airhorns/python-node:3.7.0-10.10.0-alpine3.8 3-10-alpine3.8
+            docker tag airhorns/python-node:3.7.0-10.10.0-alpine3.8 airhorns/python-node:3-10-alpine3.8
             docker push airhorns/python-node:3-10-alpine3.8
             
-            docker tag airhorns/python-node:3.7.0-10.10.0-alpine3.8 3.7-latest-alpine
+            docker tag airhorns/python-node:3.7.0-10.10.0-alpine3.8 airhorns/python-node:3.7-latest-alpine
             docker push airhorns/python-node:3.7-latest-alpine
             
-            docker tag airhorns/python-node:3.7.0-10.10.0-alpine3.8 3.7-latest-alpine3.8
+            docker tag airhorns/python-node:3.7.0-10.10.0-alpine3.8 airhorns/python-node:3.7-latest-alpine3.8
             docker push airhorns/python-node:3.7-latest-alpine3.8
             
-            docker tag airhorns/python-node:3.7.0-10.10.0-alpine3.8 3.7-10-alpine
+            docker tag airhorns/python-node:3.7.0-10.10.0-alpine3.8 airhorns/python-node:3.7-10-alpine
             docker push airhorns/python-node:3.7-10-alpine
             
-            docker tag airhorns/python-node:3.7.0-10.10.0-alpine3.8 3.7-10-alpine3.8
+            docker tag airhorns/python-node:3.7.0-10.10.0-alpine3.8 airhorns/python-node:3.7-10-alpine3.8
             docker push airhorns/python-node:3.7-10-alpine3.8
             
   
@@ -969,22 +969,22 @@ jobs:
             docker push airhorns/python-node:3.7.0-8.12.0-alpine3.8
 
             
-            docker tag airhorns/python-node:3.7.0-8.12.0-alpine3.8 latest-8-alpine
+            docker tag airhorns/python-node:3.7.0-8.12.0-alpine3.8 airhorns/python-node:latest-8-alpine
             docker push airhorns/python-node:latest-8-alpine
             
-            docker tag airhorns/python-node:3.7.0-8.12.0-alpine3.8 latest-8-alpine3.8
+            docker tag airhorns/python-node:3.7.0-8.12.0-alpine3.8 airhorns/python-node:latest-8-alpine3.8
             docker push airhorns/python-node:latest-8-alpine3.8
             
-            docker tag airhorns/python-node:3.7.0-8.12.0-alpine3.8 3-8-alpine
+            docker tag airhorns/python-node:3.7.0-8.12.0-alpine3.8 airhorns/python-node:3-8-alpine
             docker push airhorns/python-node:3-8-alpine
             
-            docker tag airhorns/python-node:3.7.0-8.12.0-alpine3.8 3-8-alpine3.8
+            docker tag airhorns/python-node:3.7.0-8.12.0-alpine3.8 airhorns/python-node:3-8-alpine3.8
             docker push airhorns/python-node:3-8-alpine3.8
             
-            docker tag airhorns/python-node:3.7.0-8.12.0-alpine3.8 3.7-8-alpine
+            docker tag airhorns/python-node:3.7.0-8.12.0-alpine3.8 airhorns/python-node:3.7-8-alpine
             docker push airhorns/python-node:3.7-8-alpine
             
-            docker tag airhorns/python-node:3.7.0-8.12.0-alpine3.8 3.7-8-alpine3.8
+            docker tag airhorns/python-node:3.7.0-8.12.0-alpine3.8 airhorns/python-node:3.7-8-alpine3.8
             docker push airhorns/python-node:3.7-8-alpine3.8
             
   
@@ -1013,22 +1013,22 @@ jobs:
             docker push airhorns/python-node:3.7.0-6.14.4-alpine3.8
 
             
-            docker tag airhorns/python-node:3.7.0-6.14.4-alpine3.8 latest-6-alpine
+            docker tag airhorns/python-node:3.7.0-6.14.4-alpine3.8 airhorns/python-node:latest-6-alpine
             docker push airhorns/python-node:latest-6-alpine
             
-            docker tag airhorns/python-node:3.7.0-6.14.4-alpine3.8 latest-6-alpine3.8
+            docker tag airhorns/python-node:3.7.0-6.14.4-alpine3.8 airhorns/python-node:latest-6-alpine3.8
             docker push airhorns/python-node:latest-6-alpine3.8
             
-            docker tag airhorns/python-node:3.7.0-6.14.4-alpine3.8 3-6-alpine
+            docker tag airhorns/python-node:3.7.0-6.14.4-alpine3.8 airhorns/python-node:3-6-alpine
             docker push airhorns/python-node:3-6-alpine
             
-            docker tag airhorns/python-node:3.7.0-6.14.4-alpine3.8 3-6-alpine3.8
+            docker tag airhorns/python-node:3.7.0-6.14.4-alpine3.8 airhorns/python-node:3-6-alpine3.8
             docker push airhorns/python-node:3-6-alpine3.8
             
-            docker tag airhorns/python-node:3.7.0-6.14.4-alpine3.8 3.7-6-alpine
+            docker tag airhorns/python-node:3.7.0-6.14.4-alpine3.8 airhorns/python-node:3.7-6-alpine
             docker push airhorns/python-node:3.7-6-alpine
             
-            docker tag airhorns/python-node:3.7.0-6.14.4-alpine3.8 3.7-6-alpine3.8
+            docker tag airhorns/python-node:3.7.0-6.14.4-alpine3.8 airhorns/python-node:3.7-6-alpine3.8
             docker push airhorns/python-node:3.7-6-alpine3.8
             
   
@@ -1057,16 +1057,16 @@ jobs:
             docker push airhorns/python-node:3.6.6-10.10.0-alpine3.8
 
             
-            docker tag airhorns/python-node:3.6.6-10.10.0-alpine3.8 3.6-latest-alpine
+            docker tag airhorns/python-node:3.6.6-10.10.0-alpine3.8 airhorns/python-node:3.6-latest-alpine
             docker push airhorns/python-node:3.6-latest-alpine
             
-            docker tag airhorns/python-node:3.6.6-10.10.0-alpine3.8 3.6-latest-alpine3.8
+            docker tag airhorns/python-node:3.6.6-10.10.0-alpine3.8 airhorns/python-node:3.6-latest-alpine3.8
             docker push airhorns/python-node:3.6-latest-alpine3.8
             
-            docker tag airhorns/python-node:3.6.6-10.10.0-alpine3.8 3.6-10-alpine
+            docker tag airhorns/python-node:3.6.6-10.10.0-alpine3.8 airhorns/python-node:3.6-10-alpine
             docker push airhorns/python-node:3.6-10-alpine
             
-            docker tag airhorns/python-node:3.6.6-10.10.0-alpine3.8 3.6-10-alpine3.8
+            docker tag airhorns/python-node:3.6.6-10.10.0-alpine3.8 airhorns/python-node:3.6-10-alpine3.8
             docker push airhorns/python-node:3.6-10-alpine3.8
             
   
@@ -1095,10 +1095,10 @@ jobs:
             docker push airhorns/python-node:3.6.6-8.12.0-alpine3.8
 
             
-            docker tag airhorns/python-node:3.6.6-8.12.0-alpine3.8 3.6-8-alpine
+            docker tag airhorns/python-node:3.6.6-8.12.0-alpine3.8 airhorns/python-node:3.6-8-alpine
             docker push airhorns/python-node:3.6-8-alpine
             
-            docker tag airhorns/python-node:3.6.6-8.12.0-alpine3.8 3.6-8-alpine3.8
+            docker tag airhorns/python-node:3.6.6-8.12.0-alpine3.8 airhorns/python-node:3.6-8-alpine3.8
             docker push airhorns/python-node:3.6-8-alpine3.8
             
   
@@ -1127,10 +1127,10 @@ jobs:
             docker push airhorns/python-node:3.6.6-6.14.4-alpine3.8
 
             
-            docker tag airhorns/python-node:3.6.6-6.14.4-alpine3.8 3.6-6-alpine
+            docker tag airhorns/python-node:3.6.6-6.14.4-alpine3.8 airhorns/python-node:3.6-6-alpine
             docker push airhorns/python-node:3.6-6-alpine
             
-            docker tag airhorns/python-node:3.6.6-6.14.4-alpine3.8 3.6-6-alpine3.8
+            docker tag airhorns/python-node:3.6.6-6.14.4-alpine3.8 airhorns/python-node:3.6-6-alpine3.8
             docker push airhorns/python-node:3.6-6-alpine3.8
             
   
@@ -1159,16 +1159,16 @@ jobs:
             docker push airhorns/python-node:3.5.6-10.10.0-alpine3.8
 
             
-            docker tag airhorns/python-node:3.5.6-10.10.0-alpine3.8 3.5-latest-alpine
+            docker tag airhorns/python-node:3.5.6-10.10.0-alpine3.8 airhorns/python-node:3.5-latest-alpine
             docker push airhorns/python-node:3.5-latest-alpine
             
-            docker tag airhorns/python-node:3.5.6-10.10.0-alpine3.8 3.5-latest-alpine3.8
+            docker tag airhorns/python-node:3.5.6-10.10.0-alpine3.8 airhorns/python-node:3.5-latest-alpine3.8
             docker push airhorns/python-node:3.5-latest-alpine3.8
             
-            docker tag airhorns/python-node:3.5.6-10.10.0-alpine3.8 3.5-10-alpine
+            docker tag airhorns/python-node:3.5.6-10.10.0-alpine3.8 airhorns/python-node:3.5-10-alpine
             docker push airhorns/python-node:3.5-10-alpine
             
-            docker tag airhorns/python-node:3.5.6-10.10.0-alpine3.8 3.5-10-alpine3.8
+            docker tag airhorns/python-node:3.5.6-10.10.0-alpine3.8 airhorns/python-node:3.5-10-alpine3.8
             docker push airhorns/python-node:3.5-10-alpine3.8
             
   
@@ -1197,10 +1197,10 @@ jobs:
             docker push airhorns/python-node:3.5.6-8.12.0-alpine3.8
 
             
-            docker tag airhorns/python-node:3.5.6-8.12.0-alpine3.8 3.5-8-alpine
+            docker tag airhorns/python-node:3.5.6-8.12.0-alpine3.8 airhorns/python-node:3.5-8-alpine
             docker push airhorns/python-node:3.5-8-alpine
             
-            docker tag airhorns/python-node:3.5.6-8.12.0-alpine3.8 3.5-8-alpine3.8
+            docker tag airhorns/python-node:3.5.6-8.12.0-alpine3.8 airhorns/python-node:3.5-8-alpine3.8
             docker push airhorns/python-node:3.5-8-alpine3.8
             
   
@@ -1229,10 +1229,10 @@ jobs:
             docker push airhorns/python-node:3.5.6-6.14.4-alpine3.8
 
             
-            docker tag airhorns/python-node:3.5.6-6.14.4-alpine3.8 3.5-6-alpine
+            docker tag airhorns/python-node:3.5.6-6.14.4-alpine3.8 airhorns/python-node:3.5-6-alpine
             docker push airhorns/python-node:3.5-6-alpine
             
-            docker tag airhorns/python-node:3.5.6-6.14.4-alpine3.8 3.5-6-alpine3.8
+            docker tag airhorns/python-node:3.5.6-6.14.4-alpine3.8 airhorns/python-node:3.5-6-alpine3.8
             docker push airhorns/python-node:3.5-6-alpine3.8
             
   
@@ -1261,28 +1261,28 @@ jobs:
             docker push airhorns/python-node:2.7.15-10.10.0-alpine3.8
 
             
-            docker tag airhorns/python-node:2.7.15-10.10.0-alpine3.8 2-latest-alpine
+            docker tag airhorns/python-node:2.7.15-10.10.0-alpine3.8 airhorns/python-node:2-latest-alpine
             docker push airhorns/python-node:2-latest-alpine
             
-            docker tag airhorns/python-node:2.7.15-10.10.0-alpine3.8 2-latest-alpine3.8
+            docker tag airhorns/python-node:2.7.15-10.10.0-alpine3.8 airhorns/python-node:2-latest-alpine3.8
             docker push airhorns/python-node:2-latest-alpine3.8
             
-            docker tag airhorns/python-node:2.7.15-10.10.0-alpine3.8 2-10-alpine
+            docker tag airhorns/python-node:2.7.15-10.10.0-alpine3.8 airhorns/python-node:2-10-alpine
             docker push airhorns/python-node:2-10-alpine
             
-            docker tag airhorns/python-node:2.7.15-10.10.0-alpine3.8 2-10-alpine3.8
+            docker tag airhorns/python-node:2.7.15-10.10.0-alpine3.8 airhorns/python-node:2-10-alpine3.8
             docker push airhorns/python-node:2-10-alpine3.8
             
-            docker tag airhorns/python-node:2.7.15-10.10.0-alpine3.8 2.7-latest-alpine
+            docker tag airhorns/python-node:2.7.15-10.10.0-alpine3.8 airhorns/python-node:2.7-latest-alpine
             docker push airhorns/python-node:2.7-latest-alpine
             
-            docker tag airhorns/python-node:2.7.15-10.10.0-alpine3.8 2.7-latest-alpine3.8
+            docker tag airhorns/python-node:2.7.15-10.10.0-alpine3.8 airhorns/python-node:2.7-latest-alpine3.8
             docker push airhorns/python-node:2.7-latest-alpine3.8
             
-            docker tag airhorns/python-node:2.7.15-10.10.0-alpine3.8 2.7-10-alpine
+            docker tag airhorns/python-node:2.7.15-10.10.0-alpine3.8 airhorns/python-node:2.7-10-alpine
             docker push airhorns/python-node:2.7-10-alpine
             
-            docker tag airhorns/python-node:2.7.15-10.10.0-alpine3.8 2.7-10-alpine3.8
+            docker tag airhorns/python-node:2.7.15-10.10.0-alpine3.8 airhorns/python-node:2.7-10-alpine3.8
             docker push airhorns/python-node:2.7-10-alpine3.8
             
   
@@ -1311,16 +1311,16 @@ jobs:
             docker push airhorns/python-node:2.7.15-8.12.0-alpine3.8
 
             
-            docker tag airhorns/python-node:2.7.15-8.12.0-alpine3.8 2-8-alpine
+            docker tag airhorns/python-node:2.7.15-8.12.0-alpine3.8 airhorns/python-node:2-8-alpine
             docker push airhorns/python-node:2-8-alpine
             
-            docker tag airhorns/python-node:2.7.15-8.12.0-alpine3.8 2-8-alpine3.8
+            docker tag airhorns/python-node:2.7.15-8.12.0-alpine3.8 airhorns/python-node:2-8-alpine3.8
             docker push airhorns/python-node:2-8-alpine3.8
             
-            docker tag airhorns/python-node:2.7.15-8.12.0-alpine3.8 2.7-8-alpine
+            docker tag airhorns/python-node:2.7.15-8.12.0-alpine3.8 airhorns/python-node:2.7-8-alpine
             docker push airhorns/python-node:2.7-8-alpine
             
-            docker tag airhorns/python-node:2.7.15-8.12.0-alpine3.8 2.7-8-alpine3.8
+            docker tag airhorns/python-node:2.7.15-8.12.0-alpine3.8 airhorns/python-node:2.7-8-alpine3.8
             docker push airhorns/python-node:2.7-8-alpine3.8
             
   
@@ -1349,16 +1349,16 @@ jobs:
             docker push airhorns/python-node:2.7.15-6.14.4-alpine3.8
 
             
-            docker tag airhorns/python-node:2.7.15-6.14.4-alpine3.8 2-6-alpine
+            docker tag airhorns/python-node:2.7.15-6.14.4-alpine3.8 airhorns/python-node:2-6-alpine
             docker push airhorns/python-node:2-6-alpine
             
-            docker tag airhorns/python-node:2.7.15-6.14.4-alpine3.8 2-6-alpine3.8
+            docker tag airhorns/python-node:2.7.15-6.14.4-alpine3.8 airhorns/python-node:2-6-alpine3.8
             docker push airhorns/python-node:2-6-alpine3.8
             
-            docker tag airhorns/python-node:2.7.15-6.14.4-alpine3.8 2.7-6-alpine
+            docker tag airhorns/python-node:2.7.15-6.14.4-alpine3.8 airhorns/python-node:2.7-6-alpine
             docker push airhorns/python-node:2.7-6-alpine
             
-            docker tag airhorns/python-node:2.7.15-6.14.4-alpine3.8 2.7-6-alpine3.8
+            docker tag airhorns/python-node:2.7.15-6.14.4-alpine3.8 airhorns/python-node:2.7-6-alpine3.8
             docker push airhorns/python-node:2.7-6-alpine3.8
             
   

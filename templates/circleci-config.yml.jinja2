@@ -31,7 +31,7 @@ jobs:
             docker push {{ build['image_name'] }}:{{ build['tag'] }}
 
             {% for alias_tag in build['alias_tags'] %}
-            docker tag {{ build['image_name'] }}:{{ build['tag'] }} {{ alias_tag }}
+            docker tag {{ build['image_name'] }}:{{ build['tag'] }} {{ build['image_name'] }}:{{ alias_tag }}
             docker push {{ build['image_name'] }}:{{ alias_tag }}
             {% endfor %}
   {% endfor %}

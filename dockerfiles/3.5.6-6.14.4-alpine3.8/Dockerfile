@@ -3,7 +3,6 @@
 # and then rerun generate.py. See the Readme for more details.
 # #######
 
-
 FROM python:3.5.6-alpine3.8
 
 RUN addgroup -g 1000 node && adduser -u 1000 -G node -s /bin/sh -D node
@@ -48,7 +47,7 @@ RUN  apk add --no-cache libstdc++ \
     && apk del .build-deps \
     && cd .. \
     && rm -Rf "node-v$NODE_VERSION" \
-    && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt
+    && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt \
     && node --version \
     && npm --version
 

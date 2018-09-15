@@ -13,8 +13,6 @@ env.filters['dirname'] = os.path.dirname
 env.filters['monospaced_list'] = lambda items: ", ".join(map(lambda item: f'`{item}`', items))
 
 destination_directory = os.path.join(current_directory, 'dockerfiles')
-
-
 hyphenize = lambda item: f"-{item}"
 
 

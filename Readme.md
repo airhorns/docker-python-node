@@ -15,19 +15,28 @@ Select a Python version, select a Node version, and select an OS that suits your
 For example, to get Python 3.6.x and Node 8.x.x on Debian Stretch, use the tag `3.6-8-stretch` like so:
 
 ```
-$ docker run airhorns/python-node:3.6-8-stretch python --version && node --version
+$ docker run airhorns/python-node:3.6-8-stretch python --version
+Python 3.6.6
+$ docker run airhorns/python-node:3.6-8-stretch node --version
+v8.9.1
 ```
 
 To use the latest Node version but fix your python version, use the `latest` version string like so:
 
 ```
-$ docker run airhorns/python-node:3.6-latest-stretch python --version && node --version
+$ docker run airhorns/python-node:3.6-8-stretch python --version
+Python 3.6.6
+$ docker run airhorns/python-node:3.6-8-stretch node --version
+v10.10.0
 ```
 
 To use the latest of all the stuff and the default OS, just use the `latest` tag:
 
 ```
-$ docker run airhorns/python-node:latest python --version && node --version
+$ docker run airhorns/python-node:latest python --version
+Python 3.7.0
+$ docker run airhorns/python-node:latest node --version
+v10.10.0
 ```
 
 Tags are always structured like so: `<python_version>-<node_version>-<os>`.

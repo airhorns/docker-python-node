@@ -25,11 +25,8 @@ RUN set -ex \
     gpg --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ; \
   done
 
-ENV NODE_MAJOR 10
 
-RUN NODE_VERSION=$(curl -SL "https://nodejs.org/dist/index.tab" \
-  | grep "^v$NODE_MAJOR" \
-  | head -n 1 | awk '{ print substr($1,2) }') \
+RUN NODE_VERSION="10.10.0" \
   && ARCH= && dpkgArch="$(dpkg --print-architecture)" \
   && case "${dpkgArch##*-}" in \
     amd64) ARCH='x64';; \

@@ -34,15 +34,15 @@ Tags are always structured like so: `<python_version>-<node_version>-<os>`.
 
 ### Available Software Versions
 
-Python:
+#### Python:
 {% for version, properties in config['python_versions'].items() -%}
   - {{ version }}, aliased as {{ properties['aliases'] | monospaced_list }}
-{% endfor -%}
+{% endfor %}
 
-Node:
+#### Node:
 {% for version, properties in config['node_versions'].items() -%}
   - {{ version }}, aliased as {{ properties['aliases'] | monospaced_list }}
-{% endfor -%}
+{% endfor %}
 
 # Available OSes
 

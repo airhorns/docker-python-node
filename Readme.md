@@ -34,15 +34,19 @@ Tags are always structured like so: `<python_version>-<node_version>-<os>`.
 
 ### Available Software Versions
 
-Python:
+#### Python:
 - 3.7.0, aliased as `latest`, `3`, `3.7`
 - 3.6.6, aliased as `3.6`
 - 3.5.6, aliased as `3.5`
 - 2.7.15, aliased as `2`, `2.7`
-Node:
+
+
+#### Node:
 - 10.10.0, aliased as `latest`, `10`
 - 8.12.0, aliased as `8`
 - 6.14.4, aliased as `6`
+
+
 # Available OSes
 
  - `stretch` - Debian Stretch, from `python:3-stretch` for example. Good default.

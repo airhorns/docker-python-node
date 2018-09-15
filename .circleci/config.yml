@@ -15,8 +15,13 @@ jobs:
             docker run airhorns/python-node:3.7.0-10.10.0-stretch python --version
             docker run airhorns/python-node:3.7.0-10.10.0-stretch node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:3.7.0-10.10.0-stretch
   
@@ -34,8 +39,13 @@ jobs:
             docker run airhorns/python-node:3.7.0-8.12.0-stretch python --version
             docker run airhorns/python-node:3.7.0-8.12.0-stretch node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:3.7.0-8.12.0-stretch
   
@@ -53,8 +63,13 @@ jobs:
             docker run airhorns/python-node:3.7.0-6.14.4-stretch python --version
             docker run airhorns/python-node:3.7.0-6.14.4-stretch node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:3.7.0-6.14.4-stretch
   
@@ -72,8 +87,13 @@ jobs:
             docker run airhorns/python-node:3.6.6-10.10.0-stretch python --version
             docker run airhorns/python-node:3.6.6-10.10.0-stretch node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:3.6.6-10.10.0-stretch
   
@@ -91,8 +111,13 @@ jobs:
             docker run airhorns/python-node:3.6.6-8.12.0-stretch python --version
             docker run airhorns/python-node:3.6.6-8.12.0-stretch node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:3.6.6-8.12.0-stretch
   
@@ -110,8 +135,13 @@ jobs:
             docker run airhorns/python-node:3.6.6-6.14.4-stretch python --version
             docker run airhorns/python-node:3.6.6-6.14.4-stretch node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:3.6.6-6.14.4-stretch
   
@@ -129,8 +159,13 @@ jobs:
             docker run airhorns/python-node:3.5.6-10.10.0-stretch python --version
             docker run airhorns/python-node:3.5.6-10.10.0-stretch node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:3.5.6-10.10.0-stretch
   
@@ -148,8 +183,13 @@ jobs:
             docker run airhorns/python-node:3.5.6-8.12.0-stretch python --version
             docker run airhorns/python-node:3.5.6-8.12.0-stretch node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:3.5.6-8.12.0-stretch
   
@@ -167,8 +207,13 @@ jobs:
             docker run airhorns/python-node:3.5.6-6.14.4-stretch python --version
             docker run airhorns/python-node:3.5.6-6.14.4-stretch node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:3.5.6-6.14.4-stretch
   
@@ -186,8 +231,13 @@ jobs:
             docker run airhorns/python-node:2.7.15-10.10.0-stretch python --version
             docker run airhorns/python-node:2.7.15-10.10.0-stretch node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:2.7.15-10.10.0-stretch
   
@@ -205,8 +255,13 @@ jobs:
             docker run airhorns/python-node:2.7.15-8.12.0-stretch python --version
             docker run airhorns/python-node:2.7.15-8.12.0-stretch node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:2.7.15-8.12.0-stretch
   
@@ -224,8 +279,13 @@ jobs:
             docker run airhorns/python-node:2.7.15-6.14.4-stretch python --version
             docker run airhorns/python-node:2.7.15-6.14.4-stretch node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:2.7.15-6.14.4-stretch
   
@@ -243,8 +303,13 @@ jobs:
             docker run airhorns/python-node:3.7.0-10.10.0-slim-stretch python --version
             docker run airhorns/python-node:3.7.0-10.10.0-slim-stretch node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:3.7.0-10.10.0-slim-stretch
   
@@ -262,8 +327,13 @@ jobs:
             docker run airhorns/python-node:3.7.0-8.12.0-slim-stretch python --version
             docker run airhorns/python-node:3.7.0-8.12.0-slim-stretch node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:3.7.0-8.12.0-slim-stretch
   
@@ -281,8 +351,13 @@ jobs:
             docker run airhorns/python-node:3.7.0-6.14.4-slim-stretch python --version
             docker run airhorns/python-node:3.7.0-6.14.4-slim-stretch node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:3.7.0-6.14.4-slim-stretch
   
@@ -300,8 +375,13 @@ jobs:
             docker run airhorns/python-node:3.6.6-10.10.0-slim-stretch python --version
             docker run airhorns/python-node:3.6.6-10.10.0-slim-stretch node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:3.6.6-10.10.0-slim-stretch
   
@@ -319,8 +399,13 @@ jobs:
             docker run airhorns/python-node:3.6.6-8.12.0-slim-stretch python --version
             docker run airhorns/python-node:3.6.6-8.12.0-slim-stretch node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:3.6.6-8.12.0-slim-stretch
   
@@ -338,8 +423,13 @@ jobs:
             docker run airhorns/python-node:3.6.6-6.14.4-slim-stretch python --version
             docker run airhorns/python-node:3.6.6-6.14.4-slim-stretch node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:3.6.6-6.14.4-slim-stretch
   
@@ -357,8 +447,13 @@ jobs:
             docker run airhorns/python-node:3.5.6-10.10.0-slim-stretch python --version
             docker run airhorns/python-node:3.5.6-10.10.0-slim-stretch node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:3.5.6-10.10.0-slim-stretch
   
@@ -376,8 +471,13 @@ jobs:
             docker run airhorns/python-node:3.5.6-8.12.0-slim-stretch python --version
             docker run airhorns/python-node:3.5.6-8.12.0-slim-stretch node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:3.5.6-8.12.0-slim-stretch
   
@@ -395,8 +495,13 @@ jobs:
             docker run airhorns/python-node:3.5.6-6.14.4-slim-stretch python --version
             docker run airhorns/python-node:3.5.6-6.14.4-slim-stretch node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:3.5.6-6.14.4-slim-stretch
   
@@ -414,8 +519,13 @@ jobs:
             docker run airhorns/python-node:2.7.15-10.10.0-slim-stretch python --version
             docker run airhorns/python-node:2.7.15-10.10.0-slim-stretch node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:2.7.15-10.10.0-slim-stretch
   
@@ -433,8 +543,13 @@ jobs:
             docker run airhorns/python-node:2.7.15-8.12.0-slim-stretch python --version
             docker run airhorns/python-node:2.7.15-8.12.0-slim-stretch node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:2.7.15-8.12.0-slim-stretch
   
@@ -452,8 +567,13 @@ jobs:
             docker run airhorns/python-node:2.7.15-6.14.4-slim-stretch python --version
             docker run airhorns/python-node:2.7.15-6.14.4-slim-stretch node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:2.7.15-6.14.4-slim-stretch
   
@@ -471,8 +591,13 @@ jobs:
             docker run airhorns/python-node:3.7.0-10.10.0-alpine3.8 python --version
             docker run airhorns/python-node:3.7.0-10.10.0-alpine3.8 node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:3.7.0-10.10.0-alpine3.8
   
@@ -490,8 +615,13 @@ jobs:
             docker run airhorns/python-node:3.7.0-8.12.0-alpine3.8 python --version
             docker run airhorns/python-node:3.7.0-8.12.0-alpine3.8 node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:3.7.0-8.12.0-alpine3.8
   
@@ -509,8 +639,13 @@ jobs:
             docker run airhorns/python-node:3.7.0-6.14.4-alpine3.8 python --version
             docker run airhorns/python-node:3.7.0-6.14.4-alpine3.8 node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:3.7.0-6.14.4-alpine3.8
   
@@ -528,8 +663,13 @@ jobs:
             docker run airhorns/python-node:3.6.6-10.10.0-alpine3.8 python --version
             docker run airhorns/python-node:3.6.6-10.10.0-alpine3.8 node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:3.6.6-10.10.0-alpine3.8
   
@@ -547,8 +687,13 @@ jobs:
             docker run airhorns/python-node:3.6.6-8.12.0-alpine3.8 python --version
             docker run airhorns/python-node:3.6.6-8.12.0-alpine3.8 node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:3.6.6-8.12.0-alpine3.8
   
@@ -566,8 +711,13 @@ jobs:
             docker run airhorns/python-node:3.6.6-6.14.4-alpine3.8 python --version
             docker run airhorns/python-node:3.6.6-6.14.4-alpine3.8 node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:3.6.6-6.14.4-alpine3.8
   
@@ -585,8 +735,13 @@ jobs:
             docker run airhorns/python-node:3.5.6-10.10.0-alpine3.8 python --version
             docker run airhorns/python-node:3.5.6-10.10.0-alpine3.8 node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:3.5.6-10.10.0-alpine3.8
   
@@ -604,8 +759,13 @@ jobs:
             docker run airhorns/python-node:3.5.6-8.12.0-alpine3.8 python --version
             docker run airhorns/python-node:3.5.6-8.12.0-alpine3.8 node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:3.5.6-8.12.0-alpine3.8
   
@@ -623,8 +783,13 @@ jobs:
             docker run airhorns/python-node:3.5.6-6.14.4-alpine3.8 python --version
             docker run airhorns/python-node:3.5.6-6.14.4-alpine3.8 node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:3.5.6-6.14.4-alpine3.8
   
@@ -642,8 +807,13 @@ jobs:
             docker run airhorns/python-node:2.7.15-10.10.0-alpine3.8 python --version
             docker run airhorns/python-node:2.7.15-10.10.0-alpine3.8 node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:2.7.15-10.10.0-alpine3.8
   
@@ -661,8 +831,13 @@ jobs:
             docker run airhorns/python-node:2.7.15-8.12.0-alpine3.8 python --version
             docker run airhorns/python-node:2.7.15-8.12.0-alpine3.8 node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:2.7.15-8.12.0-alpine3.8
   
@@ -680,8 +855,13 @@ jobs:
             docker run airhorns/python-node:2.7.15-6.14.4-alpine3.8 python --version
             docker run airhorns/python-node:2.7.15-6.14.4-alpine3.8 node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:2.7.15-6.14.4-alpine3.8
   

@@ -15,8 +15,13 @@ jobs:
             docker run {{ build['tag'] }} python --version
             docker run {{ build['tag'] }} node --version
       - run:
-          name: Push container
+          name: Push container if master
           command: |
+            if [ "$CIRCLE_BRANCH" != "master" ]; then
+              echo "Not pushing because we're not on master"
+              exit 0
+            fi
+
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push {{ build['tag'] }}
   {% endfor %}

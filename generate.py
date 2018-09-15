@@ -10,6 +10,8 @@ with open(os.path.join(current_directory, 'config.yml'), 'r') as f:
 
 env = Environment(loader=FileSystemLoader(os.path.join(current_directory, 'templates')))
 env.filters['dirname'] = os.path.dirname
+env.filters['monospaced_list'] = lambda items: ", ".join(map(lambda item: f'`{item}`', items))
+
 destination_directory = os.path.join(current_directory, 'dockerfiles')
 
 

@@ -10,117 +10,94 @@ Handy Docker containers with python and node installed securely to use as base D
 
 # How to Use
 
-Select a Python version, select a Node version, and select an OS that suits your needs, and then pick the tag that includes those. Or, if you want to use the latest, just use `latest` in the place of the version string.
+Select a Python version, select a Node version, and select an OS that suits your needs, and then pick the tag that includes those. Or, if you want to use the latest, just use `latest` in the place of the version string. When picking your version, you can be specific and use `3.7.0`, or use a major/minor like `3.7`, or just use the major version like `3.` See the exhaustive list of available tags below.
 
 For example, to get Python 3.6.x and Node 8.x.x on Debian Stretch, use the tag `3.6-8-stretch` like so:
 
 ```
-$ docker run airhorns/python-node:3.6-8-stretch python --version
+$ docker run airhorns/python-node:3.6-8-stretch python --version && node --version
 ```
 
-# Available Versions
+To use the latest Node version but fix your python version, use the `latest` version string like so:
+
+```
+$ docker run airhorns/python-node:3.6-latest-stretch python --version && node --version
+```
+
+To use the latest of all the stuff and the default OS, just use the `latest` tag:
+
+```
+$ docker run airhorns/python-node:latest python --version && node --version
+```
+
+Tags are always structured like so: `<python_version>-<node_version>-<os>`.
+
+### Available Software Versions
 
 Python:
-
-  - 3.7.0, aliased as ['latest', '3', '3.7']
-
-  - 3.6.6, aliased as ['3.6']
-
-  - 3.5.6, aliased as ['3.5']
-
-  - 2.7.15, aliased as ['2', '2.7']
-
+- 3.7.0, aliased as `latest`, `3`, `3.7`
+- 3.6.6, aliased as `3.6`
+- 3.5.6, aliased as `3.5`
+- 2.7.15, aliased as `2`, `2.7`
 Node:
+- 10.10.0, aliased as `latest`, `10`
+- 8.12.0, aliased as `8`
+- 6.14.4, aliased as `6`
+# Available OSes
 
-  - 10.10.0, aliased as ['latest', '10']
+ - `stretch` - Debian Stretch, from `python:3-stretch` for example. Good default.
+ - `slim-stretch` - Slim Debian Stretch, from `python:3-slim` for example. Missing lots of things you might be used to having like curl etc, but much smaller.
+ - `alpine3.8` - Alpine Linux, from `python:3-alpine` for example. Results in very small containers, but has just about nothing other than what it needs to run pythion and node. Can also have a [big performance hit](https://superuser.com/questions/1219609/why-is-the-alpine-docker-image-over-50-slower-than-the-ubuntu-image/1234279) depending on the usage patterns.
 
-  - 8.12.0, aliased as ['8']
+# All Available Tags
 
-  - 6.14.4, aliased as ['6']
+The currently built tags are:
 
-
-# Available OS
-OSes:
-
-
-# Available Tags
-
- - 3.7.0-10.10.0-stretch
-
- - 3.7.0-8.12.0-stretch
-
- - 3.7.0-6.14.4-stretch
-
- - 3.6.6-10.10.0-stretch
-
- - 3.6.6-8.12.0-stretch
-
- - 3.6.6-6.14.4-stretch
-
- - 3.5.6-10.10.0-stretch
-
- - 3.5.6-8.12.0-stretch
-
- - 3.5.6-6.14.4-stretch
-
- - 2.7.15-10.10.0-stretch
-
- - 2.7.15-8.12.0-stretch
-
- - 2.7.15-6.14.4-stretch
-
- - 3.7.0-10.10.0-slim-stretch
-
- - 3.7.0-8.12.0-slim-stretch
-
- - 3.7.0-6.14.4-slim-stretch
-
- - 3.6.6-10.10.0-slim-stretch
-
- - 3.6.6-8.12.0-slim-stretch
-
- - 3.6.6-6.14.4-slim-stretch
-
- - 3.5.6-10.10.0-slim-stretch
-
- - 3.5.6-8.12.0-slim-stretch
-
- - 3.5.6-6.14.4-slim-stretch
-
- - 2.7.15-10.10.0-slim-stretch
-
- - 2.7.15-8.12.0-slim-stretch
-
- - 2.7.15-6.14.4-slim-stretch
-
- - 3.7.0-10.10.0-alpine3.8
-
- - 3.7.0-8.12.0-alpine3.8
-
- - 3.7.0-6.14.4-alpine3.8
-
- - 3.6.6-10.10.0-alpine3.8
-
- - 3.6.6-8.12.0-alpine3.8
-
- - 3.6.6-6.14.4-alpine3.8
-
- - 3.5.6-10.10.0-alpine3.8
-
- - 3.5.6-8.12.0-alpine3.8
-
- - 3.5.6-6.14.4-alpine3.8
-
- - 2.7.15-10.10.0-alpine3.8
-
- - 2.7.15-8.12.0-alpine3.8
-
- - 2.7.15-6.14.4-alpine3.8
-
+- __`3.7.0-10.10.0-stretch`__: `latest-latest-stretch`, `latest-latest`, `latest-10-stretch`, `latest-10`, `3-latest-stretch`, `3-latest`, `3-10-stretch`, `3-10`, `3.7-latest-stretch`, `3.7-latest`, `3.7-10-stretch`, `3.7-10`
+- __`3.7.0-8.12.0-stretch`__: `latest-8-stretch`, `latest-8`, `3-8-stretch`, `3-8`, `3.7-8-stretch`, `3.7-8`
+- __`3.7.0-6.14.4-stretch`__: `latest-6-stretch`, `latest-6`, `3-6-stretch`, `3-6`, `3.7-6-stretch`, `3.7-6`
+- __`3.6.6-10.10.0-stretch`__: `3.6-latest-stretch`, `3.6-latest`, `3.6-10-stretch`, `3.6-10`
+- __`3.6.6-8.12.0-stretch`__: `3.6-8-stretch`, `3.6-8`
+- __`3.6.6-6.14.4-stretch`__: `3.6-6-stretch`, `3.6-6`
+- __`3.5.6-10.10.0-stretch`__: `3.5-latest-stretch`, `3.5-latest`, `3.5-10-stretch`, `3.5-10`
+- __`3.5.6-8.12.0-stretch`__: `3.5-8-stretch`, `3.5-8`
+- __`3.5.6-6.14.4-stretch`__: `3.5-6-stretch`, `3.5-6`
+- __`2.7.15-10.10.0-stretch`__: `2-latest-stretch`, `2-latest`, `2-10-stretch`, `2-10`, `2.7-latest-stretch`, `2.7-latest`, `2.7-10-stretch`, `2.7-10`
+- __`2.7.15-8.12.0-stretch`__: `2-8-stretch`, `2-8`, `2.7-8-stretch`, `2.7-8`
+- __`2.7.15-6.14.4-stretch`__: `2-6-stretch`, `2-6`, `2.7-6-stretch`, `2.7-6`
+- __`3.7.0-10.10.0-slim-stretch`__: `latest-latest-slim-stretch`, `latest-10-slim-stretch`, `3-latest-slim-stretch`, `3-10-slim-stretch`, `3.7-latest-slim-stretch`, `3.7-10-slim-stretch`
+- __`3.7.0-8.12.0-slim-stretch`__: `latest-8-slim-stretch`, `3-8-slim-stretch`, `3.7-8-slim-stretch`
+- __`3.7.0-6.14.4-slim-stretch`__: `latest-6-slim-stretch`, `3-6-slim-stretch`, `3.7-6-slim-stretch`
+- __`3.6.6-10.10.0-slim-stretch`__: `3.6-latest-slim-stretch`, `3.6-10-slim-stretch`
+- __`3.6.6-8.12.0-slim-stretch`__: `3.6-8-slim-stretch`
+- __`3.6.6-6.14.4-slim-stretch`__: `3.6-6-slim-stretch`
+- __`3.5.6-10.10.0-slim-stretch`__: `3.5-latest-slim-stretch`, `3.5-10-slim-stretch`
+- __`3.5.6-8.12.0-slim-stretch`__: `3.5-8-slim-stretch`
+- __`3.5.6-6.14.4-slim-stretch`__: `3.5-6-slim-stretch`
+- __`2.7.15-10.10.0-slim-stretch`__: `2-latest-slim-stretch`, `2-10-slim-stretch`, `2.7-latest-slim-stretch`, `2.7-10-slim-stretch`
+- __`2.7.15-8.12.0-slim-stretch`__: `2-8-slim-stretch`, `2.7-8-slim-stretch`
+- __`2.7.15-6.14.4-slim-stretch`__: `2-6-slim-stretch`, `2.7-6-slim-stretch`
+- __`3.7.0-10.10.0-alpine3.8`__: `latest-latest-alpine`, `latest-latest-alpine3.8`, `latest-10-alpine`, `latest-10-alpine3.8`, `3-latest-alpine`, `3-latest-alpine3.8`, `3-10-alpine`, `3-10-alpine3.8`, `3.7-latest-alpine`, `3.7-latest-alpine3.8`, `3.7-10-alpine`, `3.7-10-alpine3.8`
+- __`3.7.0-8.12.0-alpine3.8`__: `latest-8-alpine`, `latest-8-alpine3.8`, `3-8-alpine`, `3-8-alpine3.8`, `3.7-8-alpine`, `3.7-8-alpine3.8`
+- __`3.7.0-6.14.4-alpine3.8`__: `latest-6-alpine`, `latest-6-alpine3.8`, `3-6-alpine`, `3-6-alpine3.8`, `3.7-6-alpine`, `3.7-6-alpine3.8`
+- __`3.6.6-10.10.0-alpine3.8`__: `3.6-latest-alpine`, `3.6-latest-alpine3.8`, `3.6-10-alpine`, `3.6-10-alpine3.8`
+- __`3.6.6-8.12.0-alpine3.8`__: `3.6-8-alpine`, `3.6-8-alpine3.8`
+- __`3.6.6-6.14.4-alpine3.8`__: `3.6-6-alpine`, `3.6-6-alpine3.8`
+- __`3.5.6-10.10.0-alpine3.8`__: `3.5-latest-alpine`, `3.5-latest-alpine3.8`, `3.5-10-alpine`, `3.5-10-alpine3.8`
+- __`3.5.6-8.12.0-alpine3.8`__: `3.5-8-alpine`, `3.5-8-alpine3.8`
+- __`3.5.6-6.14.4-alpine3.8`__: `3.5-6-alpine`, `3.5-6-alpine3.8`
+- __`2.7.15-10.10.0-alpine3.8`__: `2-latest-alpine`, `2-latest-alpine3.8`, `2-10-alpine`, `2-10-alpine3.8`, `2.7-latest-alpine`, `2.7-latest-alpine3.8`, `2.7-10-alpine`, `2.7-10-alpine3.8`
+- __`2.7.15-8.12.0-alpine3.8`__: `2-8-alpine`, `2-8-alpine3.8`, `2.7-8-alpine`, `2.7-8-alpine3.8`
+- __`2.7.15-6.14.4-alpine3.8`__: `2-6-alpine`, `2-6-alpine3.8`, `2.7-6-alpine`, `2.7-6-alpine3.8`
+See the complete list at https://hub.docker.com/r/airhorns/python-node/tags/.
 
 # Usage
 
+Python and Node are installed to the system-wide default location, are on the path, and aren't wrapped by any version managers like `pyenv` or `nvm`. So, you should just be able to invoke `python` or `node` in your dockerfiles or applications and it will just work!
+
 # Contributing
+
+This repository is generated by `generate.py` from `config.yml`. To change or add a new version of one of the softwares, add it to `config.yml`, run `generate.py`, and you should find an updated set of Dockerfiles, CircleCI build config, and Readme reporting all the new stuff you've added. Horray!
 
 # License
 

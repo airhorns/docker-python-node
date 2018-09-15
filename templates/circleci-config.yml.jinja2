@@ -1,0 +1,25 @@
+version: 2
+jobs:
+  {% for build in builds %}
+  "build {{ build['filename'] }}":
+    machine:
+      enabled: true
+    steps:
+      - checkout
+      - run:
+          name: Build container
+          command: docker build -t {{ build['tag'] }} dockerfiles/{{ build['filename'] | dirname }}/.
+      - run:
+          name: Push container
+          command: |
+            docker login --username airhorns --password-stdin < $DOCKER_HUB_PASSWORD
+            docker push {{ build['tag'] }}
+  {% endfor %}
+
+workflows:
+  version: 2
+  build:
+    jobs:
+    {% for build in builds %}
+      - "build {{ build['filename'] }}"
+    {% endfor %}

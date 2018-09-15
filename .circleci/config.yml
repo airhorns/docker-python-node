@@ -457,6 +457,234 @@ jobs:
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push airhorns/python-node:2.7.15-6.14.4-slim-stretch
   
+  "build 3.7.0-10.10.0-alpine3.8/Dockerfile":
+    machine:
+      enabled: true
+    steps:
+      - checkout
+      - run:
+          name: Build container
+          command: docker build -t airhorns/python-node:3.7.0-10.10.0-alpine3.8 dockerfiles/3.7.0-10.10.0-alpine3.8/.
+      - run:
+          name: Test container
+          command: |
+            docker run airhorns/python-node:3.7.0-10.10.0-alpine3.8 python --version
+            docker run airhorns/python-node:3.7.0-10.10.0-alpine3.8 node --version
+      - run:
+          name: Push container
+          command: |
+            echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
+            docker push airhorns/python-node:3.7.0-10.10.0-alpine3.8
+  
+  "build 3.7.0-8.12.0-alpine3.8/Dockerfile":
+    machine:
+      enabled: true
+    steps:
+      - checkout
+      - run:
+          name: Build container
+          command: docker build -t airhorns/python-node:3.7.0-8.12.0-alpine3.8 dockerfiles/3.7.0-8.12.0-alpine3.8/.
+      - run:
+          name: Test container
+          command: |
+            docker run airhorns/python-node:3.7.0-8.12.0-alpine3.8 python --version
+            docker run airhorns/python-node:3.7.0-8.12.0-alpine3.8 node --version
+      - run:
+          name: Push container
+          command: |
+            echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
+            docker push airhorns/python-node:3.7.0-8.12.0-alpine3.8
+  
+  "build 3.7.0-6.14.4-alpine3.8/Dockerfile":
+    machine:
+      enabled: true
+    steps:
+      - checkout
+      - run:
+          name: Build container
+          command: docker build -t airhorns/python-node:3.7.0-6.14.4-alpine3.8 dockerfiles/3.7.0-6.14.4-alpine3.8/.
+      - run:
+          name: Test container
+          command: |
+            docker run airhorns/python-node:3.7.0-6.14.4-alpine3.8 python --version
+            docker run airhorns/python-node:3.7.0-6.14.4-alpine3.8 node --version
+      - run:
+          name: Push container
+          command: |
+            echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
+            docker push airhorns/python-node:3.7.0-6.14.4-alpine3.8
+  
+  "build 3.6.6-10.10.0-alpine3.8/Dockerfile":
+    machine:
+      enabled: true
+    steps:
+      - checkout
+      - run:
+          name: Build container
+          command: docker build -t airhorns/python-node:3.6.6-10.10.0-alpine3.8 dockerfiles/3.6.6-10.10.0-alpine3.8/.
+      - run:
+          name: Test container
+          command: |
+            docker run airhorns/python-node:3.6.6-10.10.0-alpine3.8 python --version
+            docker run airhorns/python-node:3.6.6-10.10.0-alpine3.8 node --version
+      - run:
+          name: Push container
+          command: |
+            echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
+            docker push airhorns/python-node:3.6.6-10.10.0-alpine3.8
+  
+  "build 3.6.6-8.12.0-alpine3.8/Dockerfile":
+    machine:
+      enabled: true
+    steps:
+      - checkout
+      - run:
+          name: Build container
+          command: docker build -t airhorns/python-node:3.6.6-8.12.0-alpine3.8 dockerfiles/3.6.6-8.12.0-alpine3.8/.
+      - run:
+          name: Test container
+          command: |
+            docker run airhorns/python-node:3.6.6-8.12.0-alpine3.8 python --version
+            docker run airhorns/python-node:3.6.6-8.12.0-alpine3.8 node --version
+      - run:
+          name: Push container
+          command: |
+            echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
+            docker push airhorns/python-node:3.6.6-8.12.0-alpine3.8
+  
+  "build 3.6.6-6.14.4-alpine3.8/Dockerfile":
+    machine:
+      enabled: true
+    steps:
+      - checkout
+      - run:
+          name: Build container
+          command: docker build -t airhorns/python-node:3.6.6-6.14.4-alpine3.8 dockerfiles/3.6.6-6.14.4-alpine3.8/.
+      - run:
+          name: Test container
+          command: |
+            docker run airhorns/python-node:3.6.6-6.14.4-alpine3.8 python --version
+            docker run airhorns/python-node:3.6.6-6.14.4-alpine3.8 node --version
+      - run:
+          name: Push container
+          command: |
+            echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
+            docker push airhorns/python-node:3.6.6-6.14.4-alpine3.8
+  
+  "build 3.5.6-10.10.0-alpine3.8/Dockerfile":
+    machine:
+      enabled: true
+    steps:
+      - checkout
+      - run:
+          name: Build container
+          command: docker build -t airhorns/python-node:3.5.6-10.10.0-alpine3.8 dockerfiles/3.5.6-10.10.0-alpine3.8/.
+      - run:
+          name: Test container
+          command: |
+            docker run airhorns/python-node:3.5.6-10.10.0-alpine3.8 python --version
+            docker run airhorns/python-node:3.5.6-10.10.0-alpine3.8 node --version
+      - run:
+          name: Push container
+          command: |
+            echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
+            docker push airhorns/python-node:3.5.6-10.10.0-alpine3.8
+  
+  "build 3.5.6-8.12.0-alpine3.8/Dockerfile":
+    machine:
+      enabled: true
+    steps:
+      - checkout
+      - run:
+          name: Build container
+          command: docker build -t airhorns/python-node:3.5.6-8.12.0-alpine3.8 dockerfiles/3.5.6-8.12.0-alpine3.8/.
+      - run:
+          name: Test container
+          command: |
+            docker run airhorns/python-node:3.5.6-8.12.0-alpine3.8 python --version
+            docker run airhorns/python-node:3.5.6-8.12.0-alpine3.8 node --version
+      - run:
+          name: Push container
+          command: |
+            echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
+            docker push airhorns/python-node:3.5.6-8.12.0-alpine3.8
+  
+  "build 3.5.6-6.14.4-alpine3.8/Dockerfile":
+    machine:
+      enabled: true
+    steps:
+      - checkout
+      - run:
+          name: Build container
+          command: docker build -t airhorns/python-node:3.5.6-6.14.4-alpine3.8 dockerfiles/3.5.6-6.14.4-alpine3.8/.
+      - run:
+          name: Test container
+          command: |
+            docker run airhorns/python-node:3.5.6-6.14.4-alpine3.8 python --version
+            docker run airhorns/python-node:3.5.6-6.14.4-alpine3.8 node --version
+      - run:
+          name: Push container
+          command: |
+            echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
+            docker push airhorns/python-node:3.5.6-6.14.4-alpine3.8
+  
+  "build 2.7.15-10.10.0-alpine3.8/Dockerfile":
+    machine:
+      enabled: true
+    steps:
+      - checkout
+      - run:
+          name: Build container
+          command: docker build -t airhorns/python-node:2.7.15-10.10.0-alpine3.8 dockerfiles/2.7.15-10.10.0-alpine3.8/.
+      - run:
+          name: Test container
+          command: |
+            docker run airhorns/python-node:2.7.15-10.10.0-alpine3.8 python --version
+            docker run airhorns/python-node:2.7.15-10.10.0-alpine3.8 node --version
+      - run:
+          name: Push container
+          command: |
+            echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
+            docker push airhorns/python-node:2.7.15-10.10.0-alpine3.8
+  
+  "build 2.7.15-8.12.0-alpine3.8/Dockerfile":
+    machine:
+      enabled: true
+    steps:
+      - checkout
+      - run:
+          name: Build container
+          command: docker build -t airhorns/python-node:2.7.15-8.12.0-alpine3.8 dockerfiles/2.7.15-8.12.0-alpine3.8/.
+      - run:
+          name: Test container
+          command: |
+            docker run airhorns/python-node:2.7.15-8.12.0-alpine3.8 python --version
+            docker run airhorns/python-node:2.7.15-8.12.0-alpine3.8 node --version
+      - run:
+          name: Push container
+          command: |
+            echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
+            docker push airhorns/python-node:2.7.15-8.12.0-alpine3.8
+  
+  "build 2.7.15-6.14.4-alpine3.8/Dockerfile":
+    machine:
+      enabled: true
+    steps:
+      - checkout
+      - run:
+          name: Build container
+          command: docker build -t airhorns/python-node:2.7.15-6.14.4-alpine3.8 dockerfiles/2.7.15-6.14.4-alpine3.8/.
+      - run:
+          name: Test container
+          command: |
+            docker run airhorns/python-node:2.7.15-6.14.4-alpine3.8 python --version
+            docker run airhorns/python-node:2.7.15-6.14.4-alpine3.8 node --version
+      - run:
+          name: Push container
+          command: |
+            echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
+            docker push airhorns/python-node:2.7.15-6.14.4-alpine3.8
+  
 
 workflows:
   version: 2
@@ -510,4 +738,28 @@ workflows:
       - "build 2.7.15-8.12.0-slim-stretch/Dockerfile"
     
       - "build 2.7.15-6.14.4-slim-stretch/Dockerfile"
+    
+      - "build 3.7.0-10.10.0-alpine3.8/Dockerfile"
+    
+      - "build 3.7.0-8.12.0-alpine3.8/Dockerfile"
+    
+      - "build 3.7.0-6.14.4-alpine3.8/Dockerfile"
+    
+      - "build 3.6.6-10.10.0-alpine3.8/Dockerfile"
+    
+      - "build 3.6.6-8.12.0-alpine3.8/Dockerfile"
+    
+      - "build 3.6.6-6.14.4-alpine3.8/Dockerfile"
+    
+      - "build 3.5.6-10.10.0-alpine3.8/Dockerfile"
+    
+      - "build 3.5.6-8.12.0-alpine3.8/Dockerfile"
+    
+      - "build 3.5.6-6.14.4-alpine3.8/Dockerfile"
+    
+      - "build 2.7.15-10.10.0-alpine3.8/Dockerfile"
+    
+      - "build 2.7.15-8.12.0-alpine3.8/Dockerfile"
+    
+      - "build 2.7.15-6.14.4-alpine3.8/Dockerfile"
     

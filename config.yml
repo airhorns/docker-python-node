@@ -14,3 +14,5 @@ bases:
     template_name: 'Dockerfile.debian'
   slim-stretch:
     template_name: 'Dockerfile.debian'
+  alpine3.8:
+    template_name: 'Dockerfile.alpine'

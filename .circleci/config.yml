@@ -10,6 +10,9 @@ jobs:
           name: Build container
           command: docker build -t airhorns/python-node:3.7.0-10.10.0-stretch dockerfiles/3.7.0-10.10.0-stretch/.
       - run:
+          name: Test container
+          command: docker run airhorns/python-node:3.7.0-10.10.0-stretch "python --version && node --version"
+      - run:
           name: Push container
           command: |
             docker login --username airhorns --password-stdin < $DOCKER_HUB_PASSWORD
@@ -23,6 +26,9 @@ jobs:
       - run:
           name: Build container
           command: docker build -t airhorns/python-node:3.7.0-8.12.0-stretch dockerfiles/3.7.0-8.12.0-stretch/.
+      - run:
+          name: Test container
+          command: docker run airhorns/python-node:3.7.0-8.12.0-stretch "python --version && node --version"
       - run:
           name: Push container
           command: |
@@ -38,6 +44,9 @@ jobs:
           name: Build container
           command: docker build -t airhorns/python-node:3.7.0-6.14.4-stretch dockerfiles/3.7.0-6.14.4-stretch/.
       - run:
+          name: Test container
+          command: docker run airhorns/python-node:3.7.0-6.14.4-stretch "python --version && node --version"
+      - run:
           name: Push container
           command: |
             docker login --username airhorns --password-stdin < $DOCKER_HUB_PASSWORD
@@ -51,6 +60,9 @@ jobs:
       - run:
           name: Build container
           command: docker build -t airhorns/python-node:3.6.6-10.10.0-stretch dockerfiles/3.6.6-10.10.0-stretch/.
+      - run:
+          name: Test container
+          command: docker run airhorns/python-node:3.6.6-10.10.0-stretch "python --version && node --version"
       - run:
           name: Push container
           command: |
@@ -66,6 +78,9 @@ jobs:
           name: Build container
           command: docker build -t airhorns/python-node:3.6.6-8.12.0-stretch dockerfiles/3.6.6-8.12.0-stretch/.
       - run:
+          name: Test container
+          command: docker run airhorns/python-node:3.6.6-8.12.0-stretch "python --version && node --version"
+      - run:
           name: Push container
           command: |
             docker login --username airhorns --password-stdin < $DOCKER_HUB_PASSWORD
@@ -79,6 +94,9 @@ jobs:
       - run:
           name: Build container
           command: docker build -t airhorns/python-node:3.6.6-6.14.4-stretch dockerfiles/3.6.6-6.14.4-stretch/.
+      - run:
+          name: Test container
+          command: docker run airhorns/python-node:3.6.6-6.14.4-stretch "python --version && node --version"
       - run:
           name: Push container
           command: |
@@ -94,6 +112,9 @@ jobs:
           name: Build container
           command: docker build -t airhorns/python-node:3.5.6-10.10.0-stretch dockerfiles/3.5.6-10.10.0-stretch/.
       - run:
+          name: Test container
+          command: docker run airhorns/python-node:3.5.6-10.10.0-stretch "python --version && node --version"
+      - run:
           name: Push container
           command: |
             docker login --username airhorns --password-stdin < $DOCKER_HUB_PASSWORD
@@ -107,6 +128,9 @@ jobs:
       - run:
           name: Build container
           command: docker build -t airhorns/python-node:3.5.6-8.12.0-stretch dockerfiles/3.5.6-8.12.0-stretch/.
+      - run:
+          name: Test container
+          command: docker run airhorns/python-node:3.5.6-8.12.0-stretch "python --version && node --version"
       - run:
           name: Push container
           command: |
@@ -122,6 +146,9 @@ jobs:
           name: Build container
           command: docker build -t airhorns/python-node:3.5.6-6.14.4-stretch dockerfiles/3.5.6-6.14.4-stretch/.
       - run:
+          name: Test container
+          command: docker run airhorns/python-node:3.5.6-6.14.4-stretch "python --version && node --version"
+      - run:
           name: Push container
           command: |
             docker login --username airhorns --password-stdin < $DOCKER_HUB_PASSWORD
@@ -135,6 +162,9 @@ jobs:
       - run:
           name: Build container
           command: docker build -t airhorns/python-node:2.7.15-10.10.0-stretch dockerfiles/2.7.15-10.10.0-stretch/.
+      - run:
+          name: Test container
+          command: docker run airhorns/python-node:2.7.15-10.10.0-stretch "python --version && node --version"
       - run:
           name: Push container
           command: |
@@ -150,6 +180,9 @@ jobs:
           name: Build container
           command: docker build -t airhorns/python-node:2.7.15-8.12.0-stretch dockerfiles/2.7.15-8.12.0-stretch/.
       - run:
+          name: Test container
+          command: docker run airhorns/python-node:2.7.15-8.12.0-stretch "python --version && node --version"
+      - run:
           name: Push container
           command: |
             docker login --username airhorns --password-stdin < $DOCKER_HUB_PASSWORD
@@ -163,6 +196,9 @@ jobs:
       - run:
           name: Build container
           command: docker build -t airhorns/python-node:2.7.15-6.14.4-stretch dockerfiles/2.7.15-6.14.4-stretch/.
+      - run:
+          name: Test container
+          command: docker run airhorns/python-node:2.7.15-6.14.4-stretch "python --version && node --version"
       - run:
           name: Push container
           command: |
@@ -178,6 +214,9 @@ jobs:
           name: Build container
           command: docker build -t airhorns/python-node:3.7.0-10.10.0-slim-stretch dockerfiles/3.7.0-10.10.0-slim-stretch/.
       - run:
+          name: Test container
+          command: docker run airhorns/python-node:3.7.0-10.10.0-slim-stretch "python --version && node --version"
+      - run:
           name: Push container
           command: |
             docker login --username airhorns --password-stdin < $DOCKER_HUB_PASSWORD
@@ -191,6 +230,9 @@ jobs:
       - run:
           name: Build container
           command: docker build -t airhorns/python-node:3.7.0-8.12.0-slim-stretch dockerfiles/3.7.0-8.12.0-slim-stretch/.
+      - run:
+          name: Test container
+          command: docker run airhorns/python-node:3.7.0-8.12.0-slim-stretch "python --version && node --version"
       - run:
           name: Push container
           command: |
@@ -206,6 +248,9 @@ jobs:
           name: Build container
           command: docker build -t airhorns/python-node:3.7.0-6.14.4-slim-stretch dockerfiles/3.7.0-6.14.4-slim-stretch/.
       - run:
+          name: Test container
+          command: docker run airhorns/python-node:3.7.0-6.14.4-slim-stretch "python --version && node --version"
+      - run:
           name: Push container
           command: |
             docker login --username airhorns --password-stdin < $DOCKER_HUB_PASSWORD
@@ -219,6 +264,9 @@ jobs:
       - run:
           name: Build container
           command: docker build -t airhorns/python-node:3.6.6-10.10.0-slim-stretch dockerfiles/3.6.6-10.10.0-slim-stretch/.
+      - run:
+          name: Test container
+          command: docker run airhorns/python-node:3.6.6-10.10.0-slim-stretch "python --version && node --version"
       - run:
           name: Push container
           command: |
@@ -234,6 +282,9 @@ jobs:
           name: Build container
           command: docker build -t airhorns/python-node:3.6.6-8.12.0-slim-stretch dockerfiles/3.6.6-8.12.0-slim-stretch/.
       - run:
+          name: Test container
+          command: docker run airhorns/python-node:3.6.6-8.12.0-slim-stretch "python --version && node --version"
+      - run:
           name: Push container
           command: |
             docker login --username airhorns --password-stdin < $DOCKER_HUB_PASSWORD
@@ -247,6 +298,9 @@ jobs:
       - run:
           name: Build container
           command: docker build -t airhorns/python-node:3.6.6-6.14.4-slim-stretch dockerfiles/3.6.6-6.14.4-slim-stretch/.
+      - run:
+          name: Test container
+          command: docker run airhorns/python-node:3.6.6-6.14.4-slim-stretch "python --version && node --version"
       - run:
           name: Push container
           command: |
@@ -262,6 +316,9 @@ jobs:
           name: Build container
           command: docker build -t airhorns/python-node:3.5.6-10.10.0-slim-stretch dockerfiles/3.5.6-10.10.0-slim-stretch/.
       - run:
+          name: Test container
+          command: docker run airhorns/python-node:3.5.6-10.10.0-slim-stretch "python --version && node --version"
+      - run:
           name: Push container
           command: |
             docker login --username airhorns --password-stdin < $DOCKER_HUB_PASSWORD
@@ -275,6 +332,9 @@ jobs:
       - run:
           name: Build container
           command: docker build -t airhorns/python-node:3.5.6-8.12.0-slim-stretch dockerfiles/3.5.6-8.12.0-slim-stretch/.
+      - run:
+          name: Test container
+          command: docker run airhorns/python-node:3.5.6-8.12.0-slim-stretch "python --version && node --version"
       - run:
           name: Push container
           command: |
@@ -290,6 +350,9 @@ jobs:
           name: Build container
           command: docker build -t airhorns/python-node:3.5.6-6.14.4-slim-stretch dockerfiles/3.5.6-6.14.4-slim-stretch/.
       - run:
+          name: Test container
+          command: docker run airhorns/python-node:3.5.6-6.14.4-slim-stretch "python --version && node --version"
+      - run:
           name: Push container
           command: |
             docker login --username airhorns --password-stdin < $DOCKER_HUB_PASSWORD
@@ -303,6 +366,9 @@ jobs:
       - run:
           name: Build container
           command: docker build -t airhorns/python-node:2.7.15-10.10.0-slim-stretch dockerfiles/2.7.15-10.10.0-slim-stretch/.
+      - run:
+          name: Test container
+          command: docker run airhorns/python-node:2.7.15-10.10.0-slim-stretch "python --version && node --version"
       - run:
           name: Push container
           command: |
@@ -318,6 +384,9 @@ jobs:
           name: Build container
           command: docker build -t airhorns/python-node:2.7.15-8.12.0-slim-stretch dockerfiles/2.7.15-8.12.0-slim-stretch/.
       - run:
+          name: Test container
+          command: docker run airhorns/python-node:2.7.15-8.12.0-slim-stretch "python --version && node --version"
+      - run:
           name: Push container
           command: |
             docker login --username airhorns --password-stdin < $DOCKER_HUB_PASSWORD
@@ -331,6 +400,9 @@ jobs:
       - run:
           name: Build container
           command: docker build -t airhorns/python-node:2.7.15-6.14.4-slim-stretch dockerfiles/2.7.15-6.14.4-slim-stretch/.
+      - run:
+          name: Test container
+          command: docker run airhorns/python-node:2.7.15-6.14.4-slim-stretch "python --version && node --version"
       - run:
           name: Push container
           command: |

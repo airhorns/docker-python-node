@@ -23,7 +23,6 @@ RUN set -ex \
     gpg --keyserver hkp://pgp.mit.edu:80 --recv-keys "$key" ; \
   done
 
-
 RUN NODE_VERSION="10.10.0" \
   && ARCH= && dpkgArch="$(dpkg --print-architecture)" \
   && case "${dpkgArch##*-}" in \
@@ -45,7 +44,6 @@ RUN NODE_VERSION="10.10.0" \
   && npm install -g npm \
   && node --version \
   && npm --version
-
 
 RUN YARN_VERSION=$(curl -sSL --compressed https://yarnpkg.com/latest-version) \
   set -ex \

@@ -9,7 +9,6 @@ with open(os.path.join(current_directory, 'config.yml'), 'r') as f:
 
 env = Environment(loader=FileSystemLoader(os.path.join(current_directory, 'templates')))
 env.filters['dirname'] = os.path.dirname
-template = env.get_template('Dockerfile.jinja2')
 destination_directory = os.path.join(current_directory, 'dockerfiles')
 
 shutil.rmtree(destination_directory)
@@ -17,7 +16,7 @@ os.makedirs(destination_directory)
 
 builds = []
 
-for base in config['bases']:
+for base, base_properties in config['bases'].items():
     for python_version in config['python_versions']:
         for node_version in config['node_versions']:
             build = {
@@ -36,7 +35,7 @@ for base in config['bases']:
                 os.makedirs(directory)
 
             with open(os.path.join(current_directory, 'dockerfiles', build['filename']), 'w') as f:
-                f.write(template.render(**build))
+                f.write(env.get_template(f"{ base_properties['template_name'] }.jinja2").render(**build))
 
             print(f"Generated {build['filename']}")
 

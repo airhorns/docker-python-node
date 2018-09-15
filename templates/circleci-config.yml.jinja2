@@ -5,7 +5,7 @@
 
 version: 2
 jobs:
-  {% for build in builds %}
+  {% for build in builds -%}
   "build {{ build['tag'] }}":
     machine:
       enabled: true
@@ -30,16 +30,29 @@ jobs:
             echo "$DOCKER_HUB_PASSWORD" | docker login --username airhorns --password-stdin
             docker push {{ build['image_name'] }}:{{ build['tag'] }}
 
-            {% for alias_tag in build['alias_tags'] %}
+            {% for alias_tag in build['alias_tags'] -%}
             docker tag {{ build['image_name'] }}:{{ build['tag'] }} {{ build['image_name'] }}:{{ alias_tag }}
             docker push {{ build['image_name'] }}:{{ alias_tag }}
             {% endfor %}
   {% endfor %}
+  notify_microbadger:
+    docker:
+      - image: circleci/node
+    steps:
+      - run:
+          name: POST Microbadger webhook update
+          command: curl -X POST https://hooks.microbadger.com/images/{{ config['image_name']}}/$MICROBADGER_WEBHOOK_KEY
 
 workflows:
   version: 2
   build:
     jobs:
-    {% for build in builds %}
+      {% for build in builds -%}
       - "build {{ build['tag'] }}"
-    {% endfor %}
+      {% endfor %}
+
+      - notify_microbadger:
+          requires:
+            {% for build in builds -%}
+            - "build {{ build['tag'] }}"
+            {% endfor %}
